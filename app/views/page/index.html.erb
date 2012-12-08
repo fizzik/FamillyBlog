@@ -1,0 +1,14 @@
+<% @posts.each do |post| %>
+
+    <blockquote>
+
+      <em><%= post.created_at %></em>
+
+      <p><%=link_to post.title, post,%></p>
+
+
+      <small><%= truncate(strip_tags(post.idea), length: 80)  %></small>
+
+    </blockquote>
+
+<% end %>
