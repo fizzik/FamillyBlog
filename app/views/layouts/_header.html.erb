@@ -2,10 +2,12 @@
 
 
   <ul>
+    <% if signed_in? %>
+        <%= link_to "Profile", current_user %>
+    <% end %>
     <a href="/">Home</a>
     <a href="/page/about">About</a>
     <a href="/page/help">help</a>
     <a href="/page/contact">Contact</a>
-    <li><%= link_to "Sign in", '#' %></li>
   </ul>
 </header>
