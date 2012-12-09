@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  before_filter :authenticate, :only => [:index, :edit]
   def index
     @posts = Post.all
 
@@ -26,8 +27,9 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
 
+
     respond_to do |format|
-      format.html # new.html.erb
+      format.html # new.haml
       format.json { render json: @post }
     end
   end
@@ -35,6 +37,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+
   end
 
   # POST /posts

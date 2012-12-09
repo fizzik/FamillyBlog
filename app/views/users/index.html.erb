@@ -1,0 +1,11 @@
+<h4>All users</h4>
+<%= will_paginate %>
+<ul class="users">
+  <% @users.each do |user| %>
+      <li>
+        <%= user.email %> ,
+        <%= link_to user.name, user %>
+      </li>
+  <% end %>
+</ul>
+<%= will_paginate %>
