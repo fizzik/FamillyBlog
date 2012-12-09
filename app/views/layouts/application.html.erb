@@ -14,11 +14,21 @@
 
 <div class="row-fluid">
 <div class="span8">
+
+  <% flash.each do |key, value| %>
+      <div class="flash <%= key %>"><%= value %></div>
+  <% end %>
           <%= yield %>
 
 
         </div>
-<div class="span4">.df..
+<div class="span4">
+  <% if signed_in? %>
+  <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+    <% else %>
+      <li><%= link_to "Sign in", signin_path %></li>
+      <li><%= link_to "Sign up", '/signup' %></li>
+      <% end %>
 
 
 
