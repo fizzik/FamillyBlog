@@ -18,6 +18,14 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
     </div>
+
+    <p>
+      <%= f.file_field :image %>
+    </p>
+    <label>
+      <%= f.check_box :remove_image %>
+      Remove image
+    </label>
     <div class="actions">
       <%= f.submit "Sign up" %>
     </div>
