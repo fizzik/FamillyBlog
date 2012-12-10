@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<div class="image_post">
+  <%= image_tag @post.image_url.to_s%>
+</div>
+
 <p>
   <b>Title:</b>
   <%= @post.title %>
@@ -10,10 +14,6 @@
   <%= @post.idea %>
 </p>
 
-<p>
-  <b>Image path:</b>
-  <%= @post.image_path %>
-</p>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

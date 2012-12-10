@@ -129,3 +129,17 @@ ul.users {
 .users li {
     list-style: none;
 }
+.image_user{
+    width: 120px;
+    height: 120px;
+}
+.image_user_all{
+    width: 70px;
+    height: 70px;
+}
+
+/* Post */
+.image_post{
+    width: 200px;
+    height: 200px;
+}
