@@ -2,7 +2,7 @@
 
     <blockquote>
 
-      <em><%= post.created_at %></em>
+      <em> Add <%= time_ago_in_words(post.created_at) %> ago.</em>
 
       <p><%=link_to post.title, post,%></p>
 
