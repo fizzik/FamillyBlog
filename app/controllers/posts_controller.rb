@@ -1,7 +1,11 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
-  before_filter :authenticate, :only => [:index, :edit]
+  before_filter :authenticate, :only => [:index]
+  before_filter :admin_user, :only => [:edit]
+  def admin_user
+    redirect_to(current_user) unless current_user.admin?
+  end
   def index
     @posts = Post.all
 
@@ -83,4 +87,5 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end

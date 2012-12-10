@@ -2,7 +2,7 @@
 
 class ImageUploader < CarrierWave::Uploader::Base
   def default_url
-    "app/assets/images" + [version_name, "default-user.png"].compact.join('_')
+    "uploads" + [version_name, "default-user.png"].compact.join('_')
   end
 
   # Include RMagick or MiniMagick support:
@@ -24,12 +24,12 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
-  # def default_url
-  #   # For Rails 3.1+ asset pipeline compatibility:
-  #   # asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
-  #
-  #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
-  # end
+   #def default_url
+     # For Rails 3.1+ asset pipeline compatibility:
+    #  asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
+
+    # "/images/fallback/" + [version_name, "default.png"].compact.join('_')
+   #end
 
   # Process files as they are uploaded:
   # process :scale => [200, 300]
@@ -45,9 +45,9 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
-  # def extension_white_list
-  #   %w(jpg jpeg gif png)
-  # end
+   def extension_white_list
+     %w(jpg jpeg png)
+   end
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.

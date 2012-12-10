@@ -4,6 +4,7 @@
   <title>FamillyBlog</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,27 +12,52 @@
   <div class="row-fluid">
 <div class="span12">
   <%= render 'layouts/header' %>
-
 <div class="row-fluid">
 <div class="span8">
+  <ul class="breadcrumb">
+    <li>
+      <a href="/">Home</a> <span class="divider">/</span>
+    </li>
+    <li>
+      <a href="#">Photo Gallery</a> <span class="divider">/</span>
+    </li>
+    <li>
+      <a href="/page/help">Help</a> <span class="divider">/</span>
+    </li>
+    <li>
+      <a href="/page/about">About Me</a> <span class="divider">/</span>
+    </li>
+
+  </ul>
 
   <% flash.each do |key, value| %>
       <div class="flash <%= key %>"><%= value %></div>
   <% end %>
+
           <%= yield %>
 
 
-        </div>
+</div>
 <div class="span4">
   <% if signed_in? %>
-  <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+      <% @user = current_user %>
+    <%= render 'layouts/mini_profile' %>
     <% else %>
-      <li><%= link_to "Sign in", signin_path %></li>
-      <li><%= link_to "Sign up", '/signup' %></li>
+      <div class="well">
+        <blockquote>
+          <div class="button_mini_profile">
+            <a class="btn btn-large" href="/signup">Sign up now!</a>
+          </div>
+          <small>f you dont have a profile on the my blog, you can created by clicking on the button "Sign up now"!</small>
+        </blockquote>
+        <blockquote>
+          <div class="button_signin">
+            <a class="btn btn-info" href="/signin">Sign in!</a>
+          </div>
+          <small>f you have account on my blog, you can by clicking on the button "Sign in"!</small>
+        </blockquote>
+      </div>
       <% end %>
-
-
-
         </div>
       </div>
     </div>

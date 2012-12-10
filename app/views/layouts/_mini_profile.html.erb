@@ -1,0 +1,25 @@
+<div class="well">
+<% if signed_in? %>
+      <span class="label label-info">Hello, <%=@user.name %></span>
+    <div class="mini_profile">
+      <ul class="nav nav-pills">
+        <li><%= link_to "Profile", current_user %></li>
+        <li> <%= link_to "Settings", edit_user_path(current_user) %></li>
+        <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+      </ul>
+      <ul class="thumbnails">
+        <li class="span5">
+          <div class="thumbnail">
+            <div class="image_mini_profile">
+             <%= image_tag @user.image_url.to_s%>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+ </div>
+
+
+</div>
+
+<% end %>

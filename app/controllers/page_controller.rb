@@ -3,7 +3,7 @@ class PageController < ApplicationController
   def index
     @title = "index"
     @posts = Post.order(:title)
-    @posts= Post.last(7)
+    @posts= Post.last(10)
   end
 
   def contact
