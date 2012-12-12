@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :image, :remove_image
   mount_uploader :image,ImageUploader
 
+  has_many :comments
+
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :name,  :presence => true,
