@@ -2,6 +2,8 @@ FamillyBlog::Application.routes.draw do
 
 
 
+  resources :comments
+
   match '/admin', :to => 'admin#admin'
 
   get "sessions/new"

@@ -1,0 +1,31 @@
+<% @post.comments.desc.each do |comment| %>
+     <div class="well">
+
+        <dl>
+            <dt>
+          <dl class="dl-horizontal">
+            <div class="name">
+            <dt><%=comment.user.name %></dt>
+
+            </div>
+            <div class="date">
+            <dd> <p class="muted"><em> Created <%= time_ago_in_words(comment.created_at) %> ago.</em><p/></dd>
+            </div>
+          </dl>
+            </dt>
+        <hr/>
+        <div class="image_comment">
+          <%=link_to image_tag comment.user.image_url.to_s%>
+        </div>
+        <div class="content">
+          <dd> <%= comment.content %></dd>
+         </div>
+    </dl>
+       <% if signed_in? %>
+           <% if current_user.admin? %>
+               <%= link_to "delete", comment, method: :delete, data: { confirm: 'Are you sure?' } %>
+           <% end %>
+       <% end %>
+     </div>
+
+<% end %>

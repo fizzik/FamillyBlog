@@ -169,3 +169,24 @@ ul.users {
     height: 70;
 margin-left: 65px;
 }
+/* Comment */
+.image_comment {
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+}
+.name{
+    margin-left: -110px;
+
+}
+.content{
+    margin-left: 80px;
+    margin-top: -70px;
+
+}
+.date{
+    margin-left: 140px;
+}
+.form_comment{
+    margin-left: 7px;
+}

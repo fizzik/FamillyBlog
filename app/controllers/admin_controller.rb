@@ -6,6 +6,6 @@ class AdminController < ApplicationController
 
   end
   def admin_user
-    redirect_to(current_user) unless current_user.admin?
+    redirect_to(:back) unless current_user.admin?
   end
 end
