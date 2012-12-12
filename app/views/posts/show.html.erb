@@ -1,26 +1,34 @@
 <p id="notice"><%= notice %></p>
-
+ <div class="share">
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,gplus"></div>
+ </div>
+   <p>
+<div class ="title">
+  <h4>
+  <%= @post.title %>
+  </h4>
+</div>
+</p>
+ <hr/>
 <div class="image_post">
   <%= image_tag @post.image_url.to_s%>
 </div>
-
 <p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
-
-<p>
-  <b>Idea:</b>
+  <div class="text">
   <%= @post.idea %>
+  </div>
 </p>
 
-
-      <%= render 'service/comments' %>
+<div class="like">
+<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+</div>
+<%= render 'service/comments' %>
 <%= render "service/form_comments" %>
 
 <% if signed_in? %>
-<% if current_user.admin? %>
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
-        <% end %>
+    <% if current_user.admin? %>
+        <%= link_to 'Edit', edit_post_path(@post) %> |
+        <%= link_to 'Back', posts_path %>
+    <% end %>
 <% end %>
