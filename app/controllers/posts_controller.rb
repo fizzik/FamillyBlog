@@ -8,6 +8,8 @@ class PostsController < ApplicationController
   end
   def index
     @posts = Post.all
+    # @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -57,6 +59,13 @@ class PostsController < ApplicationController
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def vote
+    value = params[:type] == "up" ? 1 : -1
+    @post = Post.find(params[:id])
+    @post.add_or_update_evaluation(:votes, value, current_user)
+    redirect_to :back
   end
 
   # PUT /posts/1
