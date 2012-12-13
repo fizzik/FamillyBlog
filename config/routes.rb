@@ -18,7 +18,10 @@ FamillyBlog::Application.routes.draw do
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
-  resources :posts
+
+  resources :posts do
+    member {post :vote}
+  end
 
   get "page/about"
   get "page/contact"

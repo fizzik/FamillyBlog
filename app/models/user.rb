@@ -4,6 +4,12 @@ class User < ActiveRecord::Base
   mount_uploader :image,ImageUploader
 
   has_many :comments
+  has_many :evaluations, class_name: "RSEvaluation", as: :source
+
+  def voted_for?(post)
+    evaluations.where(target_type: post.class, target_id: post.id).present?
+  end
+
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
