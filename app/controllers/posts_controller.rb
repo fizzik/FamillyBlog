@@ -10,7 +10,7 @@ class PostsController < ApplicationController
     @posts = Post.all
     # @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
     @posts = Post.desc
-
+    @posts = Post.search(params[:search])
 
     respond_to do |format|
       format.html # index.html.erb
