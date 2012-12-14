@@ -25,6 +25,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'simple_form', '2.0.4'
+gem 'client_side_validations', '3.2.1'
+gem 'client_side_validations-simple_form', '2.0.1'
+
 
 # To use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '~> 3.0.0'
