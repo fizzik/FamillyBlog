@@ -1,6 +1,6 @@
 <% if signed_in? %>
     <div class="form_comment">
-    <%= form_tag controller: "comments", actions: "create" do %>
+    <%= form_tag controller: "comments", actions: "create", :remote => true do %>
         <%= text_area_tag :content, "", size: '120x5' %>
         <%= text_field_tag :post_id, @post.id, style: "display: none;" %><br/>
         <%= submit_tag "add comment" %>
