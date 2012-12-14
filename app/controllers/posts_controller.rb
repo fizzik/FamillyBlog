@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     # @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
+    @posts = Post.desc
 
 
     respond_to do |format|

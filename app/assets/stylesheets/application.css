@@ -175,7 +175,8 @@ margin-left: 65px;
 .image_comment {
     width: 80px;
     height: 80px;
-    margin-top: -10px;
+    margin-top: -18px;
+    margin-left: -7px;
 }
 .name{
     margin-left: -110px;
@@ -183,7 +184,7 @@ margin-left: 65px;
 }
 .content{
     margin-left: 80px;
-    margin-top: -70px;
+    margin-top: -80px;
 
 }
 .date{
@@ -209,4 +210,11 @@ margin-left: 65px;
 /* like */
 .likes{
     margin-left: 480px;
+}
+/* Questions */
+.conteiner_ask{
+    margin-left: 7px;
+}
+.delete{
+    margin-left: 470px;
 }

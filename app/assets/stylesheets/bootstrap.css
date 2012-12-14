@@ -293,10 +293,13 @@ a:hover {
 
 .span12 {
   width: 940px;
+    background: buttonface;
+    border-radius: 10px;
 }
 
 .span11 {
   width: 860px;
+
 }
 
 .span10 {
@@ -309,6 +312,8 @@ a:hover {
 
 .span8 {
   width: 620px;
+    background: #f0fff0;
+    border-radius: 10px;
 }
 
 .span7 {
@@ -325,6 +330,8 @@ a:hover {
 
 .span4 {
   width: 300px;
+    background: #f0fff0;
+    border-radius: 10px;
 }
 
 .span3 {
@@ -700,6 +707,8 @@ a.text-error:hover {
 
 .text-info {
   color: #3a87ad;
+    line-height: 20px;
+
 }
 
 a.text-info:hover {

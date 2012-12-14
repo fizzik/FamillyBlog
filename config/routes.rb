@@ -2,6 +2,8 @@ FamillyBlog::Application.routes.draw do
 
 
 
+  resources :questions
+
   resources :comments
 
   match '/admin', :to => 'admin#admin'
@@ -22,7 +24,7 @@ FamillyBlog::Application.routes.draw do
   resources :posts do
     member {post :vote}
   end
-
+  get "page/questions"
   get "page/about"
   get "page/contact"
   get "page/help"

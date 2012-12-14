@@ -2,8 +2,8 @@ class PageController < ApplicationController
 
   def index
     @title = "index"
-    @posts = Post.order(:title)
     @posts= Post.last(10)
+    @posts = Post.desc
   end
 
   def contact
