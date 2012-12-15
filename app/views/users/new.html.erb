@@ -1,7 +1,6 @@
 <h4>Sign up</h4>
 
-<%= form_for(@user) do |f| %>
-    <%= render 'service/error_messages', :object => f.object %>
+<%= form_for (@user), :validate => true do |f| %>
     <div class="field">
       <%= f.label :name %>
 

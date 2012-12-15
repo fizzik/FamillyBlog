@@ -14,16 +14,22 @@ class User < ActiveRecord::Base
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :name,  :presence => true,
-            :length   => { :maximum => 15 }
+            :presence => {:message => "Please enter your name"},
+            :length   => { :maximum => 15, :message => "Max 15 symbol" }
+
 
   validates :email, :presence => true,
-            :format   => { :with => email_regex },
+            :presence => {:message => "Please enter your email"},
+            :format   => { :with => email_regex, :message => "Error email" },
             :uniqueness => { :case_sensitive => false }
 
-  validates :password, :presence     => true,
+  validates :password, :presence => true,
+            :presence => {:message => " Please enter password"},
             :confirmation => true,
-            :length       => { :within => 6..40 }
-  validates :image, :presence => true
+            :length       => { :within => 6..40, :message => "Is too short (minimum 6 characters" }
+
+  validates :image, :presence => true,
+            :presence => {:message => "You must add image"}
 
 
   before_save :encrypt_password
