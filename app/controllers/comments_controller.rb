@@ -6,11 +6,11 @@ class CommentsController < ApplicationController
     @comment.content = params[:content]
     @comment.user_id = current_user.id
     @comment.post_id = params[:post_id]
-    if @comment.save
-      respond_to do |format|
-        format.js {render :js => "jQuery('.comments tr:first').before('<tr><td>#{current_user.email}</td><td>#{@comment.created_at}</td><td>#{@comment.content}</td><td><button>X</button></td></tr>');jQuery('#content').val('');"}
+    respond_to do |format|
+      if @comment.save
         format.html { redirect_to :back}
-
+      else
+        format.html { redirect_to :back, notice: "Field should not be empty and max 300 symbol" }
       end
     end
   end
