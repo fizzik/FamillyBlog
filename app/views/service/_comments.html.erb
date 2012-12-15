@@ -15,7 +15,7 @@
             </dt>
 
         <div class="image_comment">
-          <%=link_to image_tag comment.user.image_url.to_s%>
+          <%=link_to (image_tag comment.user.image_url.to_s), comment.user%>
         </div>
         <div class="content">
           <dd> <%= comment.content %></dd>
