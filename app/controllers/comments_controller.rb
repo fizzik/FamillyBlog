@@ -9,6 +9,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       if @comment.save
         format.html { redirect_to :back}
+        format.js
       else
         format.html { redirect_to :back, notice: "Field should not be empty and max 300 symbol" }
       end
@@ -17,7 +18,6 @@ class CommentsController < ApplicationController
 
 
   def index
-    @total_comments = Comment.count
     @comments = Comment.desc
   end
 

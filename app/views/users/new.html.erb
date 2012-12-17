@@ -1,6 +1,7 @@
 <h4>Sign up</h4>
 
 <%= form_for (@user), :validate => true do |f| %>
+
     <div class="field">
       <%= f.label :name %>
 
@@ -18,7 +19,6 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
     </div>
-
     <p>
       <%= f.file_field :image %>
     </p>
@@ -26,6 +26,29 @@
       <%= f.check_box :remove_image %>
       Remove image
     </label>
+    <% if signed_in? %>
+    <div class="field">
+      <%= f.label :skype, "Skype:" %>
+      <%= f.text_field :skype %>
+    </div>
+    <div class="field">
+      <%= f.label :phone, "Phone:" %>
+      <%= f.text_field :phone %>
+    </div>
+    <div class="field">
+      <%= f.label :date_of_birth, "Your Birthday:" %>
+      <%= f.text_field :date_of_birth %>
+    </div>
+    <div class="field">
+      <%= f.label :town, "Town:" %>
+      <%= f.text_field :town %>
+    </div>
+    <div class="field">
+      <%= f.label :about, "About me:" %>
+      <%= f.text_area :about, rows: 6 %>
+    </div>
+     <% end %>
+
     <div class="actions">
       <%= f.submit "Sign up" %>
     </div>

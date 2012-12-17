@@ -1,0 +1,22 @@
+<% @posts.each do |post| %>
+
+
+    <blockquote>
+
+      <em> Add <%= time_ago_in_words(post.created_at) %> ago.</em>
+
+      <p><%=link_to post.title, post,%></p>
+
+
+      <small><%= truncate(strip_tags(post.idea), length: 80)  %></small>
+      <div class = "counter_comments">
+        <%= pluralize post.comments.size, "Comments" %> |
+        <%= pluralize post.reputation_for(:votes).to_i, "" %>  Like
+      </div>
+    </blockquote>
+
+<% end %>
+
+<div class="paginate">
+<%= paginate @posts %>
+</div>

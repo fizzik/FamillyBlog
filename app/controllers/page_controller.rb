@@ -2,8 +2,10 @@ class PageController < ApplicationController
 
   def index
     @title = "index"
-    @posts= Post.last(10)
     @posts = Post.desc
+    @posts= Post.desc.paginate(:page => params[:page], :per_page => 5)
+
+
   end
 
   def contact

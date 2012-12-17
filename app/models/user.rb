@@ -1,9 +1,10 @@
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation, :image, :remove_image
+  attr_accessible :name, :email, :password, :password_confirmation, :image, :remove_image, :skype, :phone, :date_of_birth, :town, :about
   mount_uploader :image,ImageUploader
 
   has_many :comments
+  has_one :user_infos
   has_many :evaluations, class_name: "RSEvaluation", as: :source
 
   def voted_for?(post)
@@ -14,22 +15,16 @@ class User < ActiveRecord::Base
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :name,  :presence => true,
-            :presence => {:message => "Please enter your name"},
-            :length   => { :maximum => 15, :message => "Max 15 symbol" }
-
+            :length   => { :maximum => 15 }
 
   validates :email, :presence => true,
-            :presence => {:message => "Please enter your email"},
-            :format   => { :with => email_regex, :message => "Error email" },
+            :format   => { :with => email_regex },
             :uniqueness => { :case_sensitive => false }
 
-  validates :password, :presence => true,
-            :presence => {:message => " Please enter password"},
+  validates :password, :presence     => true,
             :confirmation => true,
-            :length       => { :within => 6..40, :message => "Is too short (minimum 6 characters" }
-
-  validates :image, :presence => true,
-            :presence => {:message => "You must add image"}
+            :length       => { :within => 6..40 }
+  validates :image, :presence => true
 
 
   before_save :encrypt_password

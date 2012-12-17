@@ -78,9 +78,7 @@ nav ul li a:visited {
 nav ul li a:hover {
     text-decoration: underline;
 }
-
-/* Error messages */
-
+/* Validate */
 .field_with_errors {
     display: inline;
 }
@@ -90,7 +88,6 @@ nav ul li a:hover {
     padding-left: 5px;
     font-size: 12px;
 }
-
 
  /* Users */
 ul.users {
@@ -115,7 +112,13 @@ ul.users {
     height: 200px;
     margin-left: 10px;
 }
-
+.counter_comments{
+    margin-left: 390px;
+    color: #87ceeb;
+}
+.paginate{
+    margin-right: 240px ;
+}
 
 /* mini_profile */
 .image_mini_profile{
