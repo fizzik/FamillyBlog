@@ -1,6 +1,7 @@
 <h4>Sign up</h4>
 
-<%= form_for (@user), :validate => true do |f| %>
+<%= form_for(@user) do |f| %>
+    <%= render 'service/error_messages', :object => f.object %>
     <div class="field">
       <%= f.label :name %>
 
@@ -18,7 +19,6 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
     </div>
-
     <p>
       <%= f.file_field :image %>
     </p>
@@ -26,6 +26,8 @@
       <%= f.check_box :remove_image %>
       Remove image
     </label>
+
+
     <div class="actions">
       <%= f.submit "Sign up" %>
     </div>

@@ -4,13 +4,14 @@ gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.4'
 gem 'will_paginate', '3.0.3'
 gem 'carrierwave'
+gem 'kaminari'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 gem 'execjs'
-
+gem 'bullet', group: :development
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

@@ -3,15 +3,14 @@ class Post < ActiveRecord::Base
   validates :idea, :title, presence:true
   has_many :comments
   has_reputation :votes, source: :user, aggregated_by: :sum
-
+  scope :desc, order("created_at DESC")
   def self.search(search)
     if search
-      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+      where('title LIKE ?', "%#{search}%")
     else
-      find(:all)
+    scoped
     end
   end
 
   mount_uploader :image,ImageUploader
-  scope :desc, order("created_at DESC")
 end
