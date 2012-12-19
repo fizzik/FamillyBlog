@@ -2,6 +2,8 @@ FamillyBlog::Application.routes.draw do
 
 
 
+  resources :letters
+
   resources :questions
 
   resources :comments
@@ -24,6 +26,7 @@ FamillyBlog::Application.routes.draw do
   resources :posts do
     member {post :vote}
   end
+  get "page/gallery"
   get "page/questions"
   get "page/about"
   get "page/contact"

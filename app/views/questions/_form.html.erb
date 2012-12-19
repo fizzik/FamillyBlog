@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.text_field :ask  %>
+    <%= f.text_area :ask, rows: 4  %>
   </div>
     <% if signed_in? %>
         <% if current_user.admin? %>
