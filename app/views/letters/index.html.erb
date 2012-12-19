@@ -1,0 +1,43 @@
+
+<% if signed_in? %>
+    <% if current_user.admin? %>
+    <h1>Listing letters</h1>
+
+    <table>
+      <tr>
+        <th>Fio</th>
+        <th>Letter</th>
+        <th>Phone</th>
+        <th>Town</th>
+        <th>Email</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <% @letters.each do |letter| %>
+          <tr>
+            <td><%= letter.fio %></td>
+            <td><%= letter.letter %></td>
+            <td><%= letter.phone %></td>
+            <td><%= letter.town %></td>
+            <td><%= letter.email %></td>
+            <td><%= link_to 'Show', letter %></td>
+            <td><%= link_to 'Edit', edit_letter_path(letter) %></td>
+            <td><%= link_to 'Destroy', letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+    </table>
+
+    <br />
+
+
+<% else %>
+    <div class="alert alert-error">
+      <h4 class="alert alert-error">Внимание!</h4>
+      У вас нет прав войти в административную область
+
+    </div>
+<% end %>
+    <% end %>
+

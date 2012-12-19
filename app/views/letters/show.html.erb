@@ -1,0 +1,34 @@
+<% if signed_in? %>
+    <% if current_user.admin? %>
+
+
+        <p id="notice"><%= notice %></p>
+
+        <p>
+          <b>Fio:</b>
+          <%= @letter.fio %>
+        </p>
+
+        <p>
+          <b>Letter:</b>
+          <%= @letter.letter %>
+        </p>
+
+        <p>
+          <b>Phone:</b>
+          <%= @letter.phone %>
+        </p>
+
+        <p>
+          <b>Town:</b>
+          <%= @letter.town %>
+        </p>
+
+        <p>
+          <b>Email:</b>
+          <%= @letter.email %>
+        </p>
+<% else %>
+<h4> Your letter is sent! </h4>
+    <% end %>
+<% end %>

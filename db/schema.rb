@@ -11,12 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121215134727) do
+ActiveRecord::Schema.define(:version => 20121217182322) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "backgrond"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "comments", :force => true do |t|
     t.string   "content"
     t.integer  "user_id"
     t.integer  "post_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "letters", :force => true do |t|
+    t.string   "fio"
+    t.text     "letter"
+    t.string   "phone"
+    t.string   "town"
+    t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -81,16 +97,6 @@ ActiveRecord::Schema.define(:version => 20121215134727) do
   add_index "rs_reputations", ["reputation_name"], :name => "index_rs_reputations_on_reputation_name"
   add_index "rs_reputations", ["target_id", "target_type"], :name => "index_rs_reputations_on_target_id_and_target_type"
 
-  create_table "user_infos", :force => true do |t|
-    t.string   "skype"
-    t.string   "phone"
-    t.string   "date_of_birth"
-    t.string   "town"
-    t.text     "about"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -105,6 +111,7 @@ ActiveRecord::Schema.define(:version => 20121215134727) do
     t.string   "date_of_birth"
     t.string   "town"
     t.text     "about"
+    t.string   "background"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
