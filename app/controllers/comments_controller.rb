@@ -15,6 +15,13 @@ class CommentsController < ApplicationController
       end
     end
   end
+  def vote
+    value = params[:type] == "up" ? 1 : -1
+    value = params[:type] == "down" ?  -1  : 1
+    @comment = Comment.find(params[:id])
+    @comment.add_or_update_evaluation(:votes, value, current_user)
+    redirect_to :back
+  end
 
 
   def index

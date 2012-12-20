@@ -11,18 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121217182322) do
-
-  create_table "admins", :force => true do |t|
-    t.string   "backgrond"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20121220103919) do
 
   create_table "comments", :force => true do |t|
     t.string   "content"
     t.integer  "user_id"
     t.integer  "post_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "events", :force => true do |t|
+    t.string   "event"
+    t.string   "date"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -44,6 +45,11 @@ ActiveRecord::Schema.define(:version => 20121217182322) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "image"
+    t.string   "first"
+    t.string   "second"
+    t.string   "three"
+    t.string   "four"
+    t.string   "five"
   end
 
   create_table "questions", :force => true do |t|
@@ -96,6 +102,12 @@ ActiveRecord::Schema.define(:version => 20121217182322) do
   add_index "rs_reputations", ["reputation_name", "target_id", "target_type"], :name => "index_rs_reputations_on_reputation_name_and_target", :unique => true
   add_index "rs_reputations", ["reputation_name"], :name => "index_rs_reputations_on_reputation_name"
   add_index "rs_reputations", ["target_id", "target_type"], :name => "index_rs_reputations_on_target_id_and_target_type"
+
+  create_table "statuses", :force => true do |t|
+    t.string   "status"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
