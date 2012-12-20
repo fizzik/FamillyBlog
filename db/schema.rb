@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121220103919) do
+ActiveRecord::Schema.define(:version => 20121220173634) do
 
   create_table "comments", :force => true do |t|
     t.string   "content"
@@ -21,11 +21,12 @@ ActiveRecord::Schema.define(:version => 20121220103919) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "events", :force => true do |t|
-    t.string   "event"
-    t.string   "date"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "galleries", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "cover"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "letters", :force => true do |t|
@@ -38,6 +39,14 @@ ActiveRecord::Schema.define(:version => 20121220103919) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "pictures", :force => true do |t|
+    t.string   "description"
+    t.string   "image"
+    t.integer  "gallery_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "idea"
@@ -45,11 +54,6 @@ ActiveRecord::Schema.define(:version => 20121220103919) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "image"
-    t.string   "first"
-    t.string   "second"
-    t.string   "three"
-    t.string   "four"
-    t.string   "five"
   end
 
   create_table "questions", :force => true do |t|
@@ -103,12 +107,6 @@ ActiveRecord::Schema.define(:version => 20121220103919) do
   add_index "rs_reputations", ["reputation_name"], :name => "index_rs_reputations_on_reputation_name"
   add_index "rs_reputations", ["target_id", "target_type"], :name => "index_rs_reputations_on_target_id_and_target_type"
 
-  create_table "statuses", :force => true do |t|
-    t.string   "status"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -123,7 +121,6 @@ ActiveRecord::Schema.define(:version => 20121220103919) do
     t.string   "date_of_birth"
     t.string   "town"
     t.text     "about"
-    t.string   "background"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -1,12 +1,36 @@
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation, :image, :remove_image, :skype, :phone, :date_of_birth, :town, :about
-  mount_uploader :image,ImageUploader
+  attr_accessible :name, :email, :password, :password_confirmation, :image, :remove_image, :skype, :phone, :date_of_birth, :town, :about, :crop_x, :crop_y, :crop_w, :crop_h
+  attr_accessor :crop_x, :crop_y, :crop_w, :crop_h
 
   has_many :comments
   has_one :user_infos
   has_one :status
   has_many :evaluations, class_name: "RSEvaluation", as: :source
+
+  mount_uploader :image,ImageUploader
+  after_update :crop_image
+
+  def to_jq_upload
+    {
+        "name" => read_attribute(:image),
+        "size" => image.size,
+        "url" => image.url,
+        "thumbnail_url" => image.thumb.url,
+        "delete_url" => id,
+        "picture_id" => id,
+        "delete_type" => "DELETE"
+    }
+  end
+
+  def crop_image
+    image.recreate_versions! if crop_x.present?
+    current_version = self.image.current_path
+    large_version = "#{Rails.root}/public" + self.image.versions[:large].to_s
+
+    FileUtils.rm(current_version)
+    FileUtils.cp(large_version, current_version)
+  end
 
   def voted_for?(post)
     evaluations.where(target_type: post.class, target_id: post.id).present?

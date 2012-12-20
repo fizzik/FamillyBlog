@@ -2,9 +2,13 @@ FamillyBlog::Application.routes.draw do
 
 
 
-  resources :pictures
-
-  resources :galleries
+  resources :galleries do
+    resources :pictures do
+      collection do
+        post 'make_default'
+      end
+    end
+  end
 
   resources :events
 

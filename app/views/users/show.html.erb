@@ -3,7 +3,7 @@
  Profile, <%=@user.name %>
 </h5>
 <div class="image_user">
-<%= image_tag @user.image_url.to_s%>
+<%= image_tag @user.image_url.to_s, size: '120x120'%>
 </div>
 
  <h5>Email:</h5> <%= @user.email %> <br/>
@@ -12,5 +12,4 @@
 <h5>My Birthday:</h5> <%= @user.date_of_birth %> <br/>
 <h5>Town:</h5> <%= @user.town %> <br/>
 <h5>About me:</h5> <%= @user.about %> <br/>
-<%= render 'service/user_info' %>
 

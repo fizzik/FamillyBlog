@@ -17,7 +17,7 @@ class GalleriesControllerTest < ActionController::TestCase
   end
 
   test "should create gallery" do
-    assert_difference('Gallerie.count') do
+    assert_difference('Gallery.count') do
       post :create, gallery: { cover: @gallery.cover, description: @gallery.description, name: @gallery.name }
     end
 
@@ -40,7 +40,7 @@ class GalleriesControllerTest < ActionController::TestCase
   end
 
   test "should destroy gallery" do
-    assert_difference('Gallerie.count', -1) do
+    assert_difference('Gallery.count', -1) do
       delete :destroy, id: @gallery
     end
 
