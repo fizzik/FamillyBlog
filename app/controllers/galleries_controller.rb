@@ -2,7 +2,7 @@ class GalleriesController < ApplicationController
   # GET /galleries
   # GET /galleries.json
   def index
-    @galleries = Gallerie.all
+    @galleries = Gallery.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,8 +13,9 @@ class GalleriesController < ApplicationController
   # GET /galleries/1
   # GET /galleries/1.json
   def show
-    @gallery = Gallerie.find(params[:id])
-
+    @gallery = Gallery.find(params[:id])
+    @picture = @gallery.pictures.build
+    @pictures = Picture.find(:all, :conditions  => [ 'gallery_id = ?', @gallery.id ])
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @gallery }
@@ -24,7 +25,7 @@ class GalleriesController < ApplicationController
   # GET /galleries/new
   # GET /galleries/new.json
   def new
-    @gallery = Gallerie.new
+    @gallery = Gallery.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,17 +35,17 @@ class GalleriesController < ApplicationController
 
   # GET /galleries/1/edit
   def edit
-    @gallery = Gallerie.find(params[:id])
+    @gallery = Gallery.find(params[:id])
   end
 
   # POST /galleries
   # POST /galleries.json
   def create
-    @gallery = Gallerie.new(params[:gallery])
+    @gallery = Gallery.new(params[:gallery])
 
     respond_to do |format|
       if @gallery.save
-        format.html { redirect_to @gallery, notice: 'Gallerie was successfully created.' }
+        format.html { redirect_to @gallery, notice: 'Gallery was successfully created.' }
         format.json { render json: @gallery, status: :created, location: @gallery }
       else
         format.html { render action: "new" }
@@ -56,11 +57,11 @@ class GalleriesController < ApplicationController
   # PUT /galleries/1
   # PUT /galleries/1.json
   def update
-    @gallery = Gallerie.find(params[:id])
+    @gallery = Gallery.find(params[:id])
 
     respond_to do |format|
       if @gallery.update_attributes(params[:gallery])
-        format.html { redirect_to @gallery, notice: 'Gallerie was successfully updated.' }
+        format.html { redirect_to @gallery, notice: 'Gallery was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -72,7 +73,7 @@ class GalleriesController < ApplicationController
   # DELETE /galleries/1
   # DELETE /galleries/1.json
   def destroy
-    @gallery = Gallerie.find(params[:id])
+    @gallery = Gallery.find(params[:id])
     @gallery.destroy
 
     respond_to do |format|
