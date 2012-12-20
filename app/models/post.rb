@@ -12,5 +12,5 @@ class Post < ActiveRecord::Base
     end
   end
 
-  mount_uploader :image,ImageUploader
+  mount_uploader :image, ImageUploader
 end

@@ -9,7 +9,16 @@
 
             </div>
             <div class="date">
-            <dd> <p class="muted"><em> Created <%= time_ago_in_words(comment.created_at) %> ago.</em><p/></dd>
+            <dd> <p class="muted"><em>
+              Created <%= time_ago_in_words(comment.created_at) %> ago.<br/>
+              <% if signed_in? %>
+                  <%= link_to "Likes", vote_comment_path(comment, type: "up"), method: "comment" %>
+                  <%= link_to "Dislike", vote_comment_path(comment, type: "down"), method: "comment" %>
+              <% end %>
+              <span class="badge badge-info">
+<%= pluralize comment.reputation_for(:votes).to_i, "" %>
+    </span>
+            </em><p/></dd>
             </div>
           </dl>
             </dt>
@@ -21,6 +30,7 @@
           <dd> <%= comment.content %></dd>
          </div>
     </dl>
+
        <% if signed_in? %>
            <% if current_user.admin? %>
                <%= link_to "delete", comment, method: :delete, data: { confirm: 'Are you sure?' } %>

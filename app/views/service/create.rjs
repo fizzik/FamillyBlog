@@ -1,4 +1,0 @@
-page.insert_html :bottom, :comment, :partial => 'content', :object => @comment
-page[:comment_form].reset
-page.replace_html :notice, flash[:notice]
-flash.discard

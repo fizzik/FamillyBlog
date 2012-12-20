@@ -2,11 +2,19 @@ FamillyBlog::Application.routes.draw do
 
 
 
+  resources :pictures
+
+  resources :galleries
+
+  resources :events
+
   resources :letters
 
   resources :questions
 
-  resources :comments
+  resources :comments   do
+    member {post :vote}
+  end
 
   match '/admin', :to => 'admin#admin'
 
