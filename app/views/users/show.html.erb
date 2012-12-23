@@ -2,6 +2,8 @@
 <h5>
  Profile, <%=@user.name %>
 </h5>
+
+On website of: <%= time_tag(@user.created_at) %>
 <div class="image_user">
 <%= image_tag @user.image_url.to_s, size: '120x120'%>
 </div>

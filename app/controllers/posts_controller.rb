@@ -1,18 +1,19 @@
 class PostsController < ApplicationController
-  # GET /posts
-  # GET /posts.json
+
+
+  helper_method :sort_column, :sort_direction
   before_filter :authenticate, :only => [:index]
   before_filter :admin_user, :only => [:edit]
   def admin_user
     redirect_to(current_user) unless current_user.admin?
   end
   def index
+    @posts= Post.desc.last(7)
+    @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
 
-    # @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
-    @posts = Post.desc
-    @posts= Post.paginate(:page => params[:page], :per_page => 5)
-    @posts = Post.search(params[:search])
-    respond_to do |format|
+
+
+        respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
     end
@@ -95,6 +96,15 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url }
       format.json { head :no_content }
     end
+  end
+  private
+
+  def sort_column
+    Post.column_names.include?(params[:sort]) ? params[:sort] : "title"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
 
 end

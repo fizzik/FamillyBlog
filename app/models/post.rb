@@ -6,11 +6,12 @@ class Post < ActiveRecord::Base
   has_many :comments
   has_reputation :votes, source: :user, aggregated_by: :sum
   scope :desc, order("created_at DESC")
+
   def self.search(search)
     if search
-      where('title LIKE ?', "%#{search}%")
+      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
     else
-    scoped
+      find(:all)
     end
   end
 
@@ -37,5 +38,14 @@ class Post < ActiveRecord::Base
 
     FileUtils.rm(current_version)
     FileUtils.cp(large_version, current_version)
+  end
+  def self.by_votes
+    select('posts.*, coalesce(value, 0) as votes').
+        joins('left join post_votes on post_id=posts.id').
+        order('votes desc')
+  end
+
+  def votes
+    read_attribute(:votes) || post_votes.sum(:value)
   end
 end
