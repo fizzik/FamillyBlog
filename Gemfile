@@ -7,12 +7,17 @@ gem 'carrierwave'
 gem 'kaminari'
 gem 'rmagick'
 gem 'russian', '~> 0.6.0'
+gem 'ransack'
+gem 'sunspot_rails'
+gem 'progress_bar'
+gem 'tire'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 gem 'execjs'
+
 gem 'bullet', group: :development
 # Gems used only for assets and not required
 # in production environments by default.

@@ -69,15 +69,23 @@
               </div>
           <% end %>
           <% if signed_in? %>
+
           <div class="well">
             <a class="btn btn-warning" href="/letters/new">Write letter</a>
-            <% end %>
-          </div>
+                  </div>
+          <% end %>
+            <%=  render 'service/local' %>
+
         </div>
+      </div>
+      <div class="footer">
+
+
       </div>
     </div>
   </div>
 </div>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];

@@ -37,6 +37,7 @@ FamillyBlog::Application.routes.draw do
 
   resources :posts do
     member {post :vote}
+    collection { post :search, to: 'posts#index' }
   end
   get "page/gallery"
   get "page/questions"

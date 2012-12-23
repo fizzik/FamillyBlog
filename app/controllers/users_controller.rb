@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   before_filter :correct_user, :only => [:edit, :update]
   before_filter :admin_user,   :only => :destroy
 
+
   def index
     @title = "All users"
     @users = User.paginate(:page => params[:page], :per_page => 15)
@@ -73,6 +74,8 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_path) unless current_user.admin?
   end
-
+  def correct_user_ban
+    redirect_to(root_path) unless current_user?(@user)
+  end
 
 end

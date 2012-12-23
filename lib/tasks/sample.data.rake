@@ -2,6 +2,19 @@ namespace :db do
   desc "Fill database with sample data"
   task :populate => :environment do
     Rake::Task['db:reset'].invoke
+    ban = User.create!(:name => "Example User",
+                       :email => "example@railstutorial.org",
+                       :password => "foobar",
+                       :password_confirmation => "foobar")
+    ban.toggle!(:ban)
+
+  end
+end
+
+namespace :db do
+  desc "Fill database with sample data"
+  task :populate => :environment do
+    Rake::Task['db:reset'].invoke
     admin = User.create!(:name => "Example User",
                          :email => "example@railstutorial.org",
                          :password => "foobar",
@@ -10,6 +23,7 @@ namespace :db do
 
         end
 end
+
 
 module ReputationSystem
   module ReputationMethods

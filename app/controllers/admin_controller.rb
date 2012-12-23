@@ -3,6 +3,9 @@ class AdminController < ApplicationController
   before_filter :authenticate
   before_filter :admin_user
 
+  def index
+    @posts = Post.order(:name).includes(:posts)
+  end
   def admin
 
   end

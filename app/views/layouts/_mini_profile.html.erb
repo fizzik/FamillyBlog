@@ -1,6 +1,7 @@
 <div class="well">
 <% if signed_in? %>
-      <span class="label label-info">Hello, <%=@user.name %></span>
+      <span class="label label-info">Hello, <%=@user.name %></span> <br/>
+      Registered: <%= time_ago_in_words(@user.created_at) %> ago.
     <div class="mini_profile">
       <ul class="nav nav-pills">
         <li><%= link_to "Profile", current_user %></li>

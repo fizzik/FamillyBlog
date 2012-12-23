@@ -13,6 +13,8 @@
                   <img src="<%= Picture.find_by_id(gallery.cover).image.thumb.url %>" alt="">
                 </a>
             <% end %>
+            <% if signed_in? %>
+                <% if current_user.admin? %>
             <div class="caption">
               <p style="text-align: center;">
                 <a href="<%= edit_gallery_path(:id => gallery.id) %>" class="btn btn-mini">
@@ -25,10 +27,15 @@
                 </a>
               </p>
             </div>
+                  <% end %>
+                <% end %>
           </div>
         </li>
     <% end %>
   </ul>
-
+  <% if signed_in? %>
+      <% if current_user.admin? %>
   <%= link_to 'New', new_gallery_path, :class => 'btn btn-mini' %>
+          <% end %>
+      <% end %>
 </div>

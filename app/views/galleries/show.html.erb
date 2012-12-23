@@ -17,7 +17,10 @@
 </div>
 
 <%= form_for [@gallery, @picture], :html => { :multipart => true, :id => "fileupload"  } do |f| %>
+
     <div class="row">
+      <% if signed_in? %>
+          <% if current_user.admin? %>
       <div class=" fileupload-buttonbar">
         <div class="progressbar fileupload-progressbar nofade"><div style="width:0%;"></div></div>
       <span class="btn btn-mini fileinput-button">
@@ -26,6 +29,8 @@
         <%= f.file_field :image, :multiple => true %>        
       </span>
       </div>
+              <% end %>
+          <% end %>
     </div>
     <br>
     <div class="row">
@@ -37,6 +42,8 @@
                     <a href="<%= pic.image.url %>" rel="lightbox-pictures" title="<%= pic.description %>">
                       <img src="<%= pic.image.thumb.url %>" alt="">
                     </a>
+                    <% if signed_in? %>
+                        <% if current_user.admin? %>
                     <div class="caption">
                       <p style="text-align: center;">
                         <a href="/galleries/<%= @gallery.id %>/pictures/<%= pic.id %>/edit" class="btn btn-mini">
@@ -49,6 +56,8 @@
                         </a>
                       </p>
                     </div>
+                            <% end %>
+                        <% end %>
                   </div>
                 </li>
             <% end %>
@@ -104,7 +113,8 @@
 
 
 
-
+<% if signed_in? %>
+    <% if current_user.admin? %>
 <div class="row">
   <div class="form-actions">
     <%= link_to 'Back', galleries_path, :class => 'btn btn-mini'  %>
@@ -112,3 +122,5 @@
     <%= link_to 'Delete', gallery_path(@gallery), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-mini' %>
   </div>
 </div>
+<% end %>
+<% end %>

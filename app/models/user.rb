@@ -32,6 +32,7 @@ class User < ActiveRecord::Base
     FileUtils.cp(large_version, current_version)
   end
 
+
   def voted_for?(post)
     evaluations.where(target_type: post.class, target_id: post.id).present?
   end
