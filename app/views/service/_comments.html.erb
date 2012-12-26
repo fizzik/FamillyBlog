@@ -12,12 +12,12 @@
             <dd> <p class="muted"><em>
               Created <%= time_ago_in_words(comment.created_at) %> ago.<br/>
               <% if signed_in? %>
-                  <%= link_to "Likes", vote_comment_path(comment, type: "up"), method: "comment" %>
-                  <%= link_to "Dislike", vote_comment_path(comment, type: "down"), method: "comment" %>
+                  <%= link_to "Likes ", vote_comment_path(comment, type: "up"), method: "comment" %><i class="icon-arrow-up"></i> |
+                  <%= link_to "Dislike ", vote_comment_path(comment, type: "down"), method: "comment" %><i class="icon-arrow-down"></i>
               <% end %>
-              <span class="badge badge-info">
-<%= pluralize comment.reputation_for(:votes).to_i, "" %>
-    </span>
+
+              <i class="icon-star"></i> <%= pluralize comment.reputation_for(:votes).to_i, "" %>
+
             </em><p/></dd>
             </div>
           </dl>

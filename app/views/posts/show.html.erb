@@ -14,11 +14,11 @@
  <hr/>
 <div class="likes">
   <% if signed_in? %>
-      <%= link_to "Likes", vote_post_path(@post, type: "up"), method: "post" %>
+      <%= link_to " Like ", vote_post_path(@post, type: "up"), method: "post" %><i class="icon-thumbs-up"></i>
   <% end %>
-  <span class="badge badge-info">
+
 <%= pluralize @post.reputation_for(:votes).to_i, "" %>
-    </span>
+
 
 </div>
 <div class="image_post">

@@ -1,6 +1,16 @@
+<% if signed_in? %>
+    <% if current_user.admin? %>
 <%- model_class = @picture.class -%>
 <div class="page-header">
   <h1><%=t '.title', :default => t('helpers.titles.new', :model => model_class.model_name.human,
                                    :default => "New #{model_class.model_name.human}") %></h1>
 </div>
 <%= render :partial => 'form' %>
+<% else %>
+<div class="alert alert-error">
+  <h4 class="alert alert-error">Внимание!</h4>
+  У вас нет прав войти в административную область
+</div>
+<% end %>
+<% end %>
+

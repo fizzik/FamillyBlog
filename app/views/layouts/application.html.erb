@@ -1,13 +1,13 @@
-<!DOCTYPE html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<html>
+<!DOCTYPE>
+<html land ="en">
 
 <head>
+  <meta charset="utf-8">
   <title>FamillyBlog</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="/bootstrap.css" rel="stylesheet">
   <%= stylesheet_link_tag  "application" %>
-  <%= javascript_include_tag  "application" %>
   <title><%= yield :title %></title>
-  <%= javascript_include_tag :defaults, "rails.validations" %>
+
   <%= csrf_meta_tags %>
 </head>
 
@@ -17,62 +17,44 @@
 <div class="containers">
   <div class="row-fluid">
     <div class="span12">
-      <%= render 'layouts/header' %>
       <div class="row-fluid">
         <div class="span8">
           <ul class="breadcrumb">
-            <li>
-              <a href="/">Home</a> <span class="divider">/</span>
-            </li>
-            <li>
-              <%= link_to 'Photo Gallery', galleries_path %> <span class="divider">/</span>
-            </li>
-            <li>
-              <a href="/page/help">Help</a> <span class="divider">/</span>
-            </li>
-            <li>
-              <a href="/page/about">About Me</a> <span class="divider">/</span>
-            </li>
-            <li>
-              <%= link_to 'Questions', questions_path %><span class="divider">/</span>
-            </li>
 
-
-          </ul>
 
           <% flash.each do |key, value| %>
               <div class="flash <%= key %>"><%= value %></div>
           <% end %>
-
+            <%= render 'layouts/navigate' %>
           <%= yield %>
 
-
+         </ul>
         </div>
         <div class="span4">
           <% if signed_in? %>
               <% @user = current_user %>
               <%= render 'layouts/mini_profile' %>
           <% else %>
-              <div class="well">
+
                 <blockquote>
                   <div class="button_mini_profile">
-                    <a class="btn btn-large" href="/signup">Sign up now!</a>
+                    <a class="btn btn-large" href="/signup" ><i class="icon-ok"></i> Создать профиль </a>
                   </div>
                   <small>f you dont have a profile on the my blog, you can created by clicking on the button "Sign up now"!</small>
                 </blockquote>
                 <blockquote>
                   <div class="button_signin">
-                    <a class="btn btn-info" href="/signin">Sign in!</a>
+                    <a class="btn btn-info" href="/signin"><i class="icon-home"></i> Вход </a>
                   </div>
                   <small>f you have account on my blog, you can by clicking on the button "Sign in"!</small>
                 </blockquote>
-              </div>
+
           <% end %>
           <% if signed_in? %>
 
-          <div class="well">
-            <a class="btn btn-warning" href="/letters/new">Write letter</a>
-                  </div>
+
+            <a class="btn btn-large" href="/letters/new"rel="tooltip" title="Напишыте мне письмо прямо сейчас!"><i class="icon-envelope"></i> Write letter</a> <br/>
+
           <% end %>
             <%=  render 'service/local' %>
 

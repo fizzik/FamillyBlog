@@ -12,6 +12,7 @@ FamillyBlog::Application.routes.draw do
 
   resources :events
 
+
   resources :letters
 
   resources :questions
@@ -36,8 +37,8 @@ FamillyBlog::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy'
 
   resources :posts do
+
     member {post :vote}
-    collection { post :search, to: 'posts#index' }
   end
   get "page/gallery"
   get "page/questions"

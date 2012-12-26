@@ -34,5 +34,4 @@
 
 //= require twitter/bootstrap
 //= require bootstrap-image-gallery.min
-
-
+$('#example').popover(options)

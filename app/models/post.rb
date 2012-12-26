@@ -7,6 +7,7 @@ class Post < ActiveRecord::Base
   has_reputation :votes, source: :user, aggregated_by: :sum
   scope :desc, order("created_at DESC")
 
+
   def self.search(search)
     if search
       find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
@@ -14,7 +15,6 @@ class Post < ActiveRecord::Base
       find(:all)
     end
   end
-
   mount_uploader :image, ImageUploader
 
   after_update :crop_image

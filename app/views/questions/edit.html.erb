@@ -1,6 +1,40 @@
+<% if signed_in? %>
+    <% if current_user.admin? %>
 <h1>Editing question</h1>
+<%= form_for(@question) do |f| %>
+    <% if @question.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
 
-<%= render 'form' %>
+          <ul>
+            <% @question.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_area :ask, rows: 4  %>
+    </div>
+
+            <div class="field">
+              <%= f.label :answer %>
+              <%= f.text_field :answer %>
+            </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+
 
 <%= link_to 'Show', @question %> |
 <%= link_to 'Back', questions_path %>
+        <% else %>
+        <div class="alert alert-error">
+          <h4 class="alert alert-error">Внимание!</h4>
+          У вас нет прав войти в административную область
+
+        </div>
+    <% end %>
+<% end %>
