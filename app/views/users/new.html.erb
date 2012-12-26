@@ -2,32 +2,44 @@
 
 <%= form_for (@user), :validate => true do |f| %>
 
-    <div class="field">
-      <%= f.label :name %>
 
-      <%= f.text_field :name %>
-    </div>
+      <%= f.label :name, "Имя:" %>
+
+    <br/>
     <div class="field">
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Ваше имя должно иметь не меньее 15 символов." %></div><%= f.text_field :name %>
     </div>
-    <div class="field">
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+
+
+      <%= f.label :email, "Електронная почта:" %>
+    <br/>
+      <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой email адрес." %></div>  <%= f.text_field :email %>
     </div>
+
+      <%= f.label :password, "Пароль:" %>
+    <br/>
     <div class="field">
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Ваш пароль должен составлять не меньее 6 символов." %></div>  <%= f.password_field :password %>
+    </div>
+
+
+      <%= f.label :password_confirmation, "Подтвердите пароль:" %>
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой пароль ещо раз." %></div>  <%= f.password_field :password_confirmation %>
     </div>
     <p>
+      <%= f.label :image, "Загрузить фото:" %>
       <%= f.file_field :image %>
     </p>
+    <% if signed_in? %>
     <label>
       <%= f.check_box :remove_image %>
       Remove image
     </label>
 
-    <% if signed_in? %>
+
     <div class="field">
       <%= f.label :skype, "Skype:" %>
       <%= f.text_field :skype %>

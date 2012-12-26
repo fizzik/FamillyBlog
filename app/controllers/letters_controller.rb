@@ -43,6 +43,10 @@ class LettersController < ApplicationController
 
   # POST /letters
   # POST /letters.json
+  def edit
+    @letter = Letter.find(params[:id])
+
+  end
   def create
     @letter = Letter.new(params[:letter])
 

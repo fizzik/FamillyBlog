@@ -1,0 +1,39 @@
+<li>
+  <a href="/">Главная</a> <span class="divider">/</span>
+</li>
+<li>
+  <%= link_to 'Фото галерея', galleries_path %> <span class="divider">/</span>
+</li>
+<li>
+  <a href="/page/help">Помощь</a> <span class="divider">/</span>
+</li>
+<li>
+  <a href="/page/about">О проекте</a> <span class="divider">/</span>
+</li>
+<li>
+  <%= link_to 'Вопросы', questions_path %><span class="divider">/</span>
+</li>
+<li>
+  <a href="/page/contact">Контакт</a><span class="divider">/</span>
+</li>
+<li>
+  <div class="search">
+    <%= form_tag posts_path, :method => 'get' do %>
+        <p>
+          <%= text_field_tag :search, params[:search], :placeholder=>"Поиск..." %>
+        <div class="button">
+          <%= submit_tag "Поиск", :name => nil, :class=> 'btn btn-small' %>
+        </div>
+        </p>
+    <% end %>
+  </div>
+  <div class ="sort">
+    Сорторовать по:
+    <div class="btn-group" data-toggle="buttons-checkbox">
+      <%= link_to  "Популярности", posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
+      <%= link_to "По дате", page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
+
+    </div>
+  </div>
+</li>
+</ul>

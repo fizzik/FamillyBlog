@@ -1,5 +1,6 @@
+<div class="gallery">
 <div class="row">
-  <h1>Gallery</h1>
+  <h2>Gallery</h2>
 
   <input type="hidden" id="galleryID" value="<%= @gallery.id %>">
 
@@ -37,7 +38,7 @@
       <ul class="thumbnails files">
         <% unless @pictures.empty? %>
             <% @pictures.each do |pic| %>
-                <li class="span3" id="picture_<%= pic.id %>">
+                <li class="span2" id="picture_<%= pic.id %>">
                   <div class="thumbnail">
                     <a href="<%= pic.image.url %>" rel="lightbox-pictures" title="<%= pic.description %>">
                       <img src="<%= pic.image.thumb.url %>" alt="">
@@ -46,7 +47,7 @@
                         <% if current_user.admin? %>
                     <div class="caption">
                       <p style="text-align: center;">
-                        <a href="/galleries/<%= @gallery.id %>/pictures/<%= pic.id %>/edit" class="btn btn-mini">
+                        <a href="/galleries/<%= @gallery.id %>/pictures/<%= pic.id %>/edit" class="btn btn-mini btn-success">
                           <i class="icon-edit "></i>
                           Edit
                         </a>
@@ -113,14 +114,17 @@
 
 
 
-<% if signed_in? %>
-    <% if current_user.admin? %>
+
 <div class="row">
   <div class="form-actions">
     <%= link_to 'Back', galleries_path, :class => 'btn btn-mini'  %>
-    <%= link_to 'Edit', edit_gallery_path(@gallery), :class => 'btn btn-mini' %>
-    <%= link_to 'Delete', gallery_path(@gallery), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-mini' %>
+    <% if signed_in? %>
+        <% if current_user.admin? %>
+    <%= link_to 'Edit', edit_gallery_path(@gallery), :class => 'btn btn-mini ' %>
+    <%= link_to 'Delete', gallery_path(@gallery), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        <% end %>
+    <% end %>
   </div>
 </div>
-<% end %>
-<% end %>
+
+</div>

@@ -7,10 +7,12 @@ gem 'carrierwave'
 gem 'kaminari'
 gem 'rmagick'
 gem 'russian', '~> 0.6.0'
-gem 'ransack'
 gem 'sunspot_rails'
+gem 'sunspot_solr'
 gem 'progress_bar'
-gem 'tire'
+gem "bootstrap-wysihtml5-rails", "~> 0.3.1.14"
+
+gem 'meta_search'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

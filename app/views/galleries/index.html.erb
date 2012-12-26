@@ -1,8 +1,9 @@
+<div class="gallery">
 <div class="row">
-  <h1>Galleries</h1>
+  <h3>Galleries</h3>
   <ul class="thumbnails files">
     <% @galleries.each do |gallery| %>
-        <li class="span3" id="gallery_<%= gallery.id %>">
+        <li class="span2" id="gallery_<%= gallery.id %>">
           <div class="thumbnail">
             <% if gallery.cover.blank? or !Picture.find_by_id(gallery.cover) %>
                 <a href="<%= gallery_path(:id => gallery.id) %>">
@@ -35,7 +36,8 @@
   </ul>
   <% if signed_in? %>
       <% if current_user.admin? %>
-  <%= link_to 'New', new_gallery_path, :class => 'btn btn-mini' %>
+  <%= link_to 'New', new_gallery_path, :class => 'btn btn-small btn-warning' %>
           <% end %>
       <% end %>
+</div>
 </div>
