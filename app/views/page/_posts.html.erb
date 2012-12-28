@@ -1,22 +1,33 @@
 <% @posts.each do |post| %>
 
 
-    <blockquote>
+    <div class="blocke">
 
-      <em><i class="icon-time"></i> Add <%= time_ago_in_words(post.created_at) %> ago.</em>
+      <p class="muted"> <small><i class="icon-time"></i> Add <%= time_ago_in_words(post.created_at) %> ago</small> </p>
 
-      <p><%=link_to post.title, post,%></p>
+      <strong><%= post.title%></strong>
 
 
-      <small><%= truncate(strip_tags(post.idea), length: 80)  %></small>
+      <p><%= truncate(strip_tags(post.idea), length: 80)  %></p>
+
       <div class = "counter_comments">
-        <%= pluralize post.comments.size, "" %> <i class=" icon-comment"></i> |
+
+
+        <%= pluralize post.comments.size, "",  %> <i class=" icon-comment"></i> |
         <%= pluralize post.reputation_for(:votes).to_i, "" %>  <i class=" icon-thumbs-up"></i>
+
       </div>
-    </blockquote>
+
+        <div class="link">
+     <p><%=  link_to "Читать дальше...", post %> </p>
+        </div>
+       <hr/>
+
+
+    </div>
 
 <% end %>
 
-<div class="paginate">
+<div class="paginate ">
 <%= paginate @posts %>
 </div>

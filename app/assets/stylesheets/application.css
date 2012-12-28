@@ -56,6 +56,7 @@
     background: rgba(245, 231, 240, 0.18);
     border-radius: 10px;
 
+
 }
 
 .span3 {
@@ -82,7 +83,7 @@ body {
     width: 880px;
     margin-left: 225px;
     border-radius: 10px;
-
+    margin-top: -40px;
 
 
 }
@@ -176,24 +177,42 @@ ul.users {
     margin-left: 10px;
 }
 .counter_comments{
-    margin-left: 450px;
+    margin-left: 485px;
 }
 .paginate{
     margin-right: 240px ;
 }
 
 /* mini_profile */
+
 .image_mini_profile{
-    width: 90px;
-    height: 70px;
+    display: block;
+    overflow: hidden;
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 5px;
 
 }
 .mini_profile {
     width: 245px;
     height: 160px;
     border-radius: 7px;
-    margin-right: 15px;
 
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.heid_mini_prof{
+    width: 277px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 6px;
+}
+.date_mini_prof{
+    margin-left: 4px;
+}
+.navigate_mini_prof{
+    margin-left: 14px;
 }
 /* Buttons mini_profile */
 .button_mini_profile {
@@ -208,23 +227,60 @@ ul.users {
     margin-left: 65px;
 }
 /* Comment */
-.image_comment {
-    width: 80px;
-    height: 80px;
-    margin-top: -18px;
-    margin-left: -7px;
+.heid_comment_post{
+    width: 578px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 1px;
+
 }
+.container_comment{
+    width: 578px;
+    height: 100px;
+    border-radius: 5px;
+    background: rgba(104, 0, 0, 0.10);
+}
+.heid_comment{
+    margin-left: 50px;
+    width: 527px;
+    height: 20px;
+    background: rgba(106, 0, 0, 0.10);
+    border-radius: 5px;
+
+
+}
+.image_comment {
+    display: block;
+    overflow: hidden;
+    max-width: 50px;
+    max-height: 70px;
+    margin-top: -20px;
+    margin-left: 1px;
+    border-radius: 3px;
+
+}
+.container_likes{
+margin-left: 505px;
+    margin-top: -5px;
+
+}
+.container_delete{
+    margin-top: -27px;
+    margin-left: 510px;
+}
+
 .name{
-    margin-left: -110px;
+    margin-left: 8px;
 
 }
 .content{
-    margin-left: 80px;
-    margin-top: -80px;
+    margin-left: 60px;
+    margin-top: -20px;
 
 }
 .date{
-    margin-left: 140px;
+    margin-left: 355px;
+    margin-top: -25px;
 }
 .form_comment{
     margin-left: 7px;
@@ -234,18 +290,31 @@ ul.users {
     margin-left: 7px;
 }
 .text{
+    margin-top: -30px;
     margin-left: 7px;
+}
+.heid_post{
+    width: 578px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 1px;
+    margin-top: -19px;
+}
+.time_tag{
+    margin-left: 5px ;
 }
 /* share */
 .like{
     margin-left: 7px;
 }
 .share{
-    margin-left: 450px;
+    margin-left: 480px;
+    margin-top: -33px;
 }
 /* like */
 .likes{
-    margin-left: 480px;
+    margin-left: 495px;
+
 }
 /* Questions */
 .conteiner_ask{
@@ -256,8 +325,8 @@ ul.users {
 }
 /* Search */
 .search{
-
-    margin-left: 245px;
+    margin-top: 10px;
+    margin-left: 275px;
 }
 .button{
     margin-top: -45px;
@@ -270,12 +339,28 @@ ul.users {
 }
 /* Socil network */
 .socil{
-    margin-left: 45px;
+    margin-left: 88px;
+    margin-top: 10px;
+}
+.heid_local{
+    width: 277px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 6px;
+
+}
+.info_local{
+    margin-left: 4px;
+}
+.button_local{
+    margin-top: -29px;
+    margin-left: 3px;
+
 }
 /* Sorting button*/
 .sort{
-    margin-top: -30px;
-    margin-left: 7px;
+    margin-top: -42px;
+    margin-left: 3px;
 }
 /* gallery */
 .gallery{
@@ -300,7 +385,7 @@ ul.users {
 .pagination a:hover,
 .pagination .active a,
 .pagination .active span {
-    background-color: #f5f5f5;
+    background-color: #f51614;
 }
 
 .pagination .active a,
@@ -327,9 +412,9 @@ ul.users {
 
 .pagination li:last-child a,
 .pagination li:last-child span {
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 1px 1px 0;
+    -moz-border-radius: 0 1px 1px 0;
+    border-radius: 0 1px 1px 0;
 }
 
 .pagination-centered {
@@ -344,5 +429,16 @@ ul.users {
     margin-left: 210px;
    margin-top: -28px;
 }
+/*post_page*/
+.blocke {
 
+margin-left: 7px;
+}
+
+.link{
+    margin-top: -20px;
+}
+.link_delete{
+    margin-left: 495px;
+}
 

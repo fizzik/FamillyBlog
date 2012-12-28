@@ -1,41 +1,46 @@
 <% @post.comments.desc.each do |comment| %>
-     <div class="well">
 
-        <dl>
-            <dt>
-          <dl class="dl-horizontal">
+        <div class="container_comment">
+          <div class="heid_comment">
             <div class="name">
-            <dt><%=comment.user.name %></dt>
-
+              <p class="muted"><%=comment.user.name %></p>
             </div>
+
             <div class="date">
-            <dd> <p class="muted"><em>
-              Created <%= time_ago_in_words(comment.created_at) %> ago.<br/>
-              <% if signed_in? %>
-                  <%= link_to "Likes ", vote_comment_path(comment, type: "up"), method: "comment" %><i class="icon-arrow-up"></i> |
-                  <%= link_to "Dislike ", vote_comment_path(comment, type: "down"), method: "comment" %><i class="icon-arrow-down"></i>
-              <% end %>
-
-              <i class="icon-star"></i> <%= pluralize comment.reputation_for(:votes).to_i, "" %>
-
-            </em><p/></dd>
+              <p class="muted"> Created <%= time_ago_in_words(comment.created_at) %> ago.</p>
             </div>
-          </dl>
-            </dt>
+            <div class="container_delete">
+              <% if signed_in? %>
+                  <% if current_user.admin? %>
+                      <%= link_to "x", comment, method: :delete, data: { confirm: 'Are you sure?' } %>
+                  <% end %>
+              <% end %>
+            </div>
+          </div>
 
-        <div class="image_comment">
-          <%=link_to (image_tag comment.user.image_url.to_s, size: '80x80'), comment.user%>
+
+          <div class="image_comment">
+            <%=link_to (image_tag comment.user.image_url.to_s, size: '50x50'), comment.user%>
+          </div>
+          <div class="content">
+            <p class="text-error"><%= comment.content %></p>
+          </div>
+          <div class="container_likes">
+              <p>
+              <% if signed_in? %>
+                  <%= link_to " ", vote_comment_path(comment, type: "up"), method: "comment", :class=>" icon-thumbs-up"%>
+                  <%= link_to " ", vote_comment_path(comment, type: "down"), method: "comment", :class=>"icon-thumbs-down" %>
+              <% end %>
+              <i class="icon-heart"></i> <%= pluralize comment.reputation_for(:votes).to_i, "" %>
+              </p>
+          </div>
+
         </div>
-        <div class="content">
-          <dd> <%= comment.content %></dd>
-         </div>
-    </dl>
 
-       <% if signed_in? %>
-           <% if current_user.admin? %>
-               <%= link_to "delete", comment, method: :delete, data: { confirm: 'Are you sure?' } %>
-           <% end %>
-       <% end %>
-     </div>
+
+    <br/>
+
+
+
 
 <% end %>

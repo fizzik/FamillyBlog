@@ -5,7 +5,6 @@ class User < ActiveRecord::Base
 
   has_many :comments
   has_one :user_infos
-  has_one :status
   has_many :evaluations, class_name: "RSEvaluation", as: :source
 
   mount_uploader :image,ImageUploader

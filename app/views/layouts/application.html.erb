@@ -6,6 +6,7 @@
   <title>FamillyBlog</title>
   <link href="/bootstrap.css" rel="stylesheet">
   <%= stylesheet_link_tag  "application" %>
+  <%= javascript_include_tag "application" %>
   <title><%= yield :title %></title>
 
   <%= csrf_meta_tags %>
@@ -20,11 +21,6 @@
       <div class="row-fluid">
         <div class="span8">
           <ul class="breadcrumb">
-
-
-          <% flash.each do |key, value| %>
-              <div class="flash <%= key %>"><%= value %></div>
-          <% end %>
             <%= render 'layouts/navigate' %>
           <%= yield %>
 
@@ -50,12 +46,7 @@
                 </blockquote>
 
           <% end %>
-          <% if signed_in? %>
 
-
-            <a class="btn btn-large" href="/letters/new"rel="tooltip" title="Напишыте мне письмо прямо сейчас!"><i class="icon-envelope"></i> Write letter</a> <br/>
-
-          <% end %>
             <%=  render 'service/local' %>
 
         </div>

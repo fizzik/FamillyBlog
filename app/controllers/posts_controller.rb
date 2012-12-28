@@ -8,6 +8,7 @@ class PostsController < ApplicationController
     @posts = Post.search(params[:search])
     @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
 
+
   respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }

@@ -1,26 +1,28 @@
-<div class="well">
+
+
 <% if signed_in? %>
-      <span class="label label-info">Hello, <%=@user.name %></span> <br/>
-      Registered: <%= time_ago_in_words(@user.created_at) %> ago.
+
+      <div class="heid_mini_prof">
+        <div class="date_mini_prof">
+        <p class="muted">На сайте з: <%= time_tag(@user.created_at) %> </p>
+        </div>
+      </div>
     <div class="mini_profile">
+      <span class="badge badge-important"><em>Привет, <%=@user.name %></em></span>
+
+
+      <div class="navigate_mini_prof">
       <ul class="nav nav-pills">
-        <li><%= link_to "Profile", current_user %></li>
-        <li> <%= link_to "Settings", edit_user_path(current_user) %></li>
-        <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+        <li><%= link_to "Профиль", current_user, :rel=>"tooltip", :title=>"Напишыте мне письмо прямо сейчас!" %></li>
+        <li> <%= link_to "Настройки", edit_user_path(current_user) %></li>
+        <li><%= link_to "Вийти", signout_path, :method => :delete %></li>
       </ul>
-      <ul class="thumbnails">
-        <li class="span5">
-          <div class="thumbnail">
+      </div>
+
             <div class="image_mini_profile">
-             <%= image_tag @user.image_url.to_s, size: '90x80'%>
+             <%= image_tag @user.image_url.to_s, size: '70x70'%>
             </div>
-          </div>
-        </li>
-      </ul>
-
- </div>
-
-
-</div>
 
 <% end %>
+</div>
+<br/>
