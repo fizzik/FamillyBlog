@@ -3,7 +3,7 @@ class Comment < ActiveRecord::Base
   belongs_to :post
   belongs_to :user
   has_reputation :votes, source: :user, aggregated_by: :sum
-  validates :content, :presence => true, :length => { :maximum => 1000 }
+  validates :content, :presence => true, :length => { :maximum => 200 }
   validates :user_id, :post_id, :presence => true
 
 

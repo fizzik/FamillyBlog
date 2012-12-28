@@ -1,37 +1,51 @@
-<p id="notice"><%= notice %></p>
- <div class="share">
-<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
-<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,gplus"></div>
- </div>
-
-   <p>
-<div class ="title">
-  <h4>
-  <%= @post.title %>
-  </h4>
-</div>
-</p>
- <hr/>
-<div class="likes">
-  <% if signed_in? %>
-      <%= link_to " Like ", vote_post_path(@post, type: "up"), method: "post" %><i class="icon-thumbs-up"></i>
-  <% end %>
-
-<%= pluralize @post.reputation_for(:votes).to_i, "" %>
-
-
-</div>
-<div class="image_post">
-  <%= image_tag @post.image_url.to_s, size: '180x180'%>
-</div>
-<p>
-  <div class="text">
-  <%= @post.idea %>
+<div class="heid_post">
+  <div class="time_tag">
+    <p class="muted">  <%= time_tag(@post.created_at) %>  <p/>
   </div>
-</p>
+</div>
 
+<p id="notice"><%= notice %></p>
+<div class="share">
+  <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+  <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,gplus"></div>
+</div>
+
+<br/>
+<br/>
+<div class ="title">
+
+ <strong> <em><%= @post.title %></em>  </strong>
+
+</div>
+<div class="likes">
+<% if signed_in? %>
+    <%= link_to " Like ", vote_post_path(@post, type: "up"), method: "post" %>
+<% end %>
+
+  <i class="icon-thumbs-up"></i> <%= pluralize @post.reputation_for(:votes).to_i, "" %>
+</div>
+
+<div class="image_post">
+  <%= image_tag @post.image_url.to_s, size: '250x250', :class=>"img-polaroid"%>
+
+</div>
+<br/>
+<br/>
+
+
+  <div class="text">
+<%= @post.idea %>
+  </div>
+<br
+
+<br/>
 <div class="like">
 <div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+</div>
+<br/>
+<br/>
+<div class="heid_comment_post">
+  <p class="text-error">Оставте свой коментарий:</p>
 </div>
 <br/>
 <%= render 'service/comments' %>
