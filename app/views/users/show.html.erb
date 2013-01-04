@@ -1,20 +1,43 @@
 
-<h5>
- Profile, <%=@user.name %>
-</h5>
-
-On website of: <%= time_tag(@user.created_at) %>
-<div class="image_user">
-  <% if @user.image %>
-<%=  image_tag @user.image_url.to_s, size: '120x120'%>
-
-  <% end %>
+<div class="heid_user">
+  <div class="name_user_page">
+ <p class="muted">Profile, <%=@user.name %></p>
+  </div>
+  <div class="date_user_page">
+  <p class="muted">Создан: <%= time_tag(@user.created_at) %></p>
+  </div>
 </div>
 
- <h5>Email:</h5> <%= @user.email %> <br/>
-<h5>Skype:</h5> <%= @user.skype %> <br/>
-<h5>Number phone:</h5> <%= @user.phone %> <br/>
-<h5>My Birthday:</h5> <%= @user.date_of_birth %> <br/>
-<h5>Town:</h5> <%= @user.town %> <br/>
-<h5>About me:</h5> <%= @user.about %> <br/>
 
+<div class="image_user">
+<%=  image_tag @user.image_url.to_s, size: '120x120'%>
+</div>
+
+<div class="info_user_page">
+
+ <dl>
+    <dt><p class="text-error">Електронная почта:</p></dt>
+    <dd><p class="muted"> <%= @user.email %></p></dd>
+  </dl>
+  <dl>
+    <dt><p class="text-error">Skype:</p></dt>
+    <dd><p class="muted"> <%= @user.skype %></p> </dd>
+  </dl>
+  <dl>
+    <dt><p class="text-error">Номер телефона:</p></dt>
+    <dd><p class="muted"> <%= @user.phone %></p></dd>
+  </dl>
+  <dl>
+    <dt><p class="text-error">Дата рождения:</p></dt>
+    <dd><p class="muted"> <%= @user.date_of_birth %></p> </dd>
+  </dl>
+  <dl>
+    <dt><p class="text-error">Город:</p></dt>
+    <dd><p class="muted"><%= @user.town %></p> </dd>
+  </dl>
+  <dl>
+    <dt><p class="text-error">Коротко о себе:</p></dt>
+    <dd><p class="muted"><%= @user.about %> </p> </dd>
+  </dl>
+
+</div>

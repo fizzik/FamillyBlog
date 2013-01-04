@@ -76,6 +76,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 
@@ -154,6 +155,10 @@ nav ul li a:hover {
 }
 
 /* Users */
+.edit_profile{
+    margin-left: 7px;
+
+}
 ul.users {
     margin-top: 1em;
 }
@@ -162,12 +167,41 @@ ul.users {
     list-style: none;
 }
 .image_user{
-    width: 120px;
-    height: 120px;
+    display: block;
+    overflow: hidden;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top: 10px;
 }
 .image_user_all{
     width: 70px;
     height: 70px;
+}
+.info_user_page{
+    margin-left:10px;
+    margin-top: 15px;
+}
+.infos_user{
+    margin-left: 140px;
+    margin-top: -134px;
+
+}
+.heid_user{
+    width: 578px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 1px;
+    margin-top: -18px;
+
+}
+.name_user_page{
+    margin-left: 5px;
+}
+.date_user_page{
+    margin-left: 380px;
+    margin-top: -26px;
 }
 
 /* Post */
@@ -184,6 +218,10 @@ ul.users {
 }
 
 /* mini_profile */
+.name_mini_profile{
+    margin-left: 48px;
+    margin-top: -26px;
+}
 
 .image_mini_profile{
     display: block;
@@ -216,9 +254,8 @@ ul.users {
 }
 /* Buttons mini_profile */
 .button_mini_profile {
-    width: 268;
-    height: 70;
-    margin-left: 30px;
+   margin-top: -46px;
+    margin-left: 54px;
 
 }
 .button_signin{
@@ -259,6 +296,10 @@ ul.users {
     border-radius: 3px;
 
 }
+.counter_post_comments{
+    margin-top: -25px;
+    margin-left: 445px;
+}
 .container_likes{
 margin-left: 505px;
     margin-top: -5px;
@@ -292,6 +333,7 @@ margin-left: 505px;
 .text{
     margin-top: -30px;
     margin-left: 7px;
+    margin-right: 7px;
 }
 .heid_post{
     width: 578px;
@@ -302,6 +344,14 @@ margin-left: 505px;
 }
 .time_tag{
     margin-left: 5px ;
+}
+/* Photo gallery */
+.container_photo_gallery{
+    margin-left: 5px;
+
+}
+.button_gallery{
+    margin-left: 10px;
 }
 /* share */
 .like{
@@ -321,7 +371,14 @@ margin-left: 505px;
     margin-left: 7px;
 }
 .delete{
-    margin-left: 470px;
+    margin-left: 500px;
+
+}
+.answers_page{
+    margin-left: 7px;
+}
+.time_questions{
+    margin-top: -17px;
 }
 /* Search */
 .search{
@@ -441,4 +498,64 @@ margin-left: 7px;
 .link_delete{
     margin-left: 495px;
 }
+/* miniadmin */
+.text_admin_sector{
+    margin-left: 5px;
+}
+.heid_admin_sector{
+    width: 277px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 6px;
+}
+.info_admin_sector{
+margin-left: 5px;
 
+}
+.miniadmin_image{
+    display: block;
+    overflow: hidden;
+    max-width: 180px;
+    max-height: 210px;
+    margin-left: 123px;
+    border-radius: 1px;
+    margin-top: 55px;
+
+}
+.button_admin{
+    margin-left: 3px;
+    margin-top: -95px;
+}
+/* signin */
+.sign_in{
+margin-left: 15px;
+}
+.text_heid_sign_in{
+    margin-left: 5px;
+}
+.heid_sign_in{
+    width: 277px;
+    height: 20px;
+    background: rgba(216, 212, 212, 0.29);
+    border-radius: 6px;
+}
+.text_remember{
+    margin-left: 22px;
+    margin-top: -20px;
+}
+.reg_user{
+    margin-left: 7px;
+}
+/* letters */
+.letters{
+margin-left: 7px;
+}
+.index_letters{
+    margin-left: 7px;
+}
+.time_letters{
+    margin-left: 420px;
+}
+.letters_show{
+    margin-left: 7px;
+}

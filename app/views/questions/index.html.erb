@@ -1,45 +1,44 @@
 
 
-
+<center><h4>Вопросы</h4></center>
+<hr/>
 <% @questions.each do |question| %>
     <div class="conteiner_ask">
-    <dl>
-      <dt>
+
       <div class="delete">
         <% if signed_in? %>
             <% if current_user.admin? %>
-                <%= link_to 'Delete', question, method: :delete, data: { confirm: 'Are you sure?' } %>
+                <p clas="muted"><%= link_to 'Удалить', question, method: :delete, data: { confirm: 'Are you sure?' } %></p>
             <% end %>
         <% end %>
       </div>
-        <p> <small><p class="text-warning">Add <%= time_ago_in_words(question.created_at) %> ago.</p></small> </p>
-      <p class="text-warning"> <h5><%= question.ask %></h5> </p>
+      <div class ="time_questions">
+      <p class="muted">Add <%= time_ago_in_words(question.created_at) %> ago.</p>
+      </div>
 
-      </dt>
+      <dl>
+        <dt><p class="text-error"> <%= question.ask %></p></dt>
+        <dd><p class="muted"> <%= question.answer %>
+          <% if signed_in? %>
+              <% if current_user.admin? %>
+                  <%= link_to "Ответить", edit_question_path(question) %>
+              <% end %>
+          <% end %>
+        </p></dd>
 
-      <dd><p class="muted"><%= question.answer %>
-        <% if signed_in? %>
-            <% if current_user.admin? %>
-                <p class="text-error"><%= link_to 'Response!', edit_question_path(question) %></p>
-            <% end %>
-        <% end %>
-      </p>
-
-      </dd>
-
-    </dl>
+      </dl>
+      <hr/>
     </div>
-    <hr/>
 <% end %>
 
 
 <br />
 <% if signed_in? %>
-<%= link_to 'New Question', new_question_path %>
+<%= link_to 'Задать вопрос', new_question_path, :class => 'btn btn-small' %>
     <% else %>
     <div class="alert alert-error">
       <h4 class="alert alert-error">Предупреждение!</h4>
       Только зарегистрирование пользователи могут задавать мне вопросы.
-      <a class="btn btn-small" href="/signup">Sign up now!</a>
+      <a class="btn btn-small" href="/signup">Cоздать профиль</a>
     </div>
  <% end %>

@@ -1,4 +1,7 @@
-<h4>Sign up</h4>
+<center><h4>Регистрация</h4></center>
+<hr/>
+<div class ="reg_user">
+<p class="text-error"> ► Все поля обязательны к заполнению!</p>
 
 <%= form_for (@user), :validate => true do |f| %>
 
@@ -7,7 +10,7 @@
 
     <br/>
     <div class="field">
-      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Ваше имя должно иметь не меньее 15 символов." %></div><%= f.text_field :name %>
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Ваше имя должно иметь не больше 15 символов." %></div><%= f.text_field :name %>
     </div>
 
 
@@ -63,8 +66,9 @@
      <% end %>
 
     <div class="actions">
-      <%= f.submit "Sign up" %>
+      <%= f.submit "Создать профиль" %>
     </div>
 
 
 <% end %>
+</div>

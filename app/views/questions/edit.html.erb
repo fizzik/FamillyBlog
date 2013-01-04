@@ -1,35 +1,28 @@
 <% if signed_in? %>
     <% if current_user.admin? %>
-<h1>Editing question</h1>
+<center><h4>Ответ</h4></center>
+
 <%= form_for(@question) do |f| %>
-    <% if @question.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+<div class="answers_page">
+ <p class="text-error">► Введите ваш анонимний вопрос.</p>
+            <div class="field">
+           <hr/>
+     <p class="text-error"> <%= @question.ask%></p>
+            <hr/>
+              </div>
 
-          <ul>
-            <% @question.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
-
-    <div class="field">
-      <%= f.text_area :ask, rows: 4  %>
-    </div>
 
             <div class="field">
-              <%= f.label :answer %>
-              <%= f.text_field :answer %>
+              <%= f.label :answer, 'Ваш ответ:' %>
+              <%= f.text_area :answer, rows: 2 %>
             </div>
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit "Добавить ответ", :class=> 'btn btn-small' %>
     </div>
 <% end %>
 
+        </div>
 
-<%= link_to 'Show', @question %> |
-<%= link_to 'Back', questions_path %>
         <% else %>
         <div class="alert alert-error">
           <h4 class="alert alert-error">Внимание!</h4>

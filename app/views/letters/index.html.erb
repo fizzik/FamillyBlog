@@ -1,33 +1,30 @@
 
 <% if signed_in? %>
     <% if current_user.admin? %>
-    <h1>Listing letters</h1>
+    <center><h4>Ваши письма</h4></center>
+        <hr/>
 
-    <table>
-      <tr>
-        <th>Fio</th>
-        <th>Letter</th>
-        <th>Phone</th>
-        <th>Town</th>
-        <th>Email</th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
+
 
       <% @letters.each do |letter| %>
-          <tr>
-            <td><%= letter.fio %></td>
-            <td><%= letter.letter %></td>
-            <td><%= letter.phone %></td>
-            <td><%= letter.town %></td>
-            <td><%= letter.email %></td>
-            <td><%= link_to 'Show', letter %></td>
-            <td><%= link_to 'Edit', edit_letter_path(letter) %></td>
-            <td><%= link_to 'Destroy', letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
+            <div class="time_letters">
+          <p class="muted">  <%= time_tag letter.created_at %></p>
+            </div>
+            <div class="index_letters">
+            <dl>
+              <dt><p class="text-error">Прислал:</p></dt>
+              <dd><p class="muted"> <%= letter.fio %></p></dd>
+            </dl>
+            </div>
+
+
+            <form class="well form-inline">
+            <%= link_to 'Читать', letter, :class=>'btn btn-small' %>
+            <%= link_to 'Удалить', letter,:class=>'btn btn-small', method: :delete, data: { confirm: 'Вы уверены?' } %>
+            </form>
+            <hr/>
       <% end %>
-    </table>
+
 
     <br />
 

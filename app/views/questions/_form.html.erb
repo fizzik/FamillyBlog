@@ -1,28 +1,19 @@
 <%= form_for(@question) do |f| %>
-  <% if @question.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
 
-      <ul>
-      <% @question.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
   <div class="field">
-    <%= f.text_area :ask, rows: 4  %>
+    <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Введите ваш анонимний вопрос в поле рядом." %></div><%= f.text_area :ask, rows: 4 %>
   </div>
     <% if signed_in? %>
         <% if current_user.admin? %>
   <div class="field">
-    <%= f.label :answer %>
+    <%= f.label :answer, "Oтвет:" %>
     <%= f.text_field :answer %>
   </div>
             <% end %>
         <% end %>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= link_to 'Отмена', posts_path,  :class => 'btn btn-small' %>
+    <%= f.submit "Задать вопрос", :class => 'btn btn-small' %>
+
+
 <% end %>

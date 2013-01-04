@@ -1,20 +1,46 @@
+<div class="letters">
 <%= simple_form_for (@letter), :validate => true do |f| %>
-  <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.label :fio, "FIO:" %>
-    <%= f.text_field :fio %>
-    <%= f.label :letter, "Letter:" %>
-    <%= f.text_area :letter, rows:8 %>
-    <%= f.label :phone, "Number phone:" %>
-    <%= f.text_field :phone %>
-    <%= f.label :town, "Town:" %>
-    <%= f.text_field :town %>
-    <%= f.label :email, "Email:" %>
-    <%= f.text_field :email %>
-  </div>
+      <div class ="reg_user">
+        <p class="text-error"> ► Поля с звездочкой обязательны к заполнению.</p>
+        </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+
+    <%= f.label :fio, "ФИО:*" %>
+
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажыте свои фамилию, имя, отчество" %></div><%= f.text_field :fio %>
+    </div>
+
+    <%= f.label :letter, "Текст:*" %>
+
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы можете ввести ваше письмо" %></div><%= f.text_area :letter, rows: 8 %>
+    </div>
+    <%= f.label :phone, "Номер телефона:" %>
+
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажите ваш номер телефона" %></div><%= f.text_field :phone %>
+    </div>
+    <%= f.label :town, "Город:" %>
+
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажите ваш город" %></div><%= f.text_field :town %>
+    </div>
+    <%= f.label :email, "Ваша електронная почта:*" %>
+
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажите вашу електронную почту" %></div><%= f.text_field :email %>
+    </div>
+
+    <%= link_to 'Отмена', posts_path, :class => 'btn btn-small' %>
+    <%= f.button :submit, "Послать" %>
+
+
 <% end %>
+</div>

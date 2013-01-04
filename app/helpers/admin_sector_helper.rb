@@ -1,0 +1,2 @@
+module AdminSectorHelper
+end

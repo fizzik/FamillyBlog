@@ -14,10 +14,10 @@
 
       <div class = "counter_comments">
 
-
+        <p class="text=error">
         <%= pluralize post.comments.size, "",  %> <i class=" icon-comment"></i> |
         <%= pluralize post.reputation_for(:votes).to_i, "" %>  <i class=" icon-thumbs-up"></i>
-
+        </p>
       </div>
 
       <div class="link">

@@ -1,13 +1,16 @@
+
 <div class="gallery">
 <div class="row">
-  <h3>Galleries</h3>
+  <center><h4>Фото альбомы</h4></center>
+  <br/>
+  <div class="container_photo_gallery">
   <ul class="thumbnails files">
     <% @galleries.each do |gallery| %>
         <li class="span2" id="gallery_<%= gallery.id %>">
           <div class="thumbnail">
             <% if gallery.cover.blank? or !Picture.find_by_id(gallery.cover) %>
                 <a href="<%= gallery_path(:id => gallery.id) %>">
-                  <img src="/assets/NoImageAvailable.jpg" alt="">
+                  <img src="/assets/photogalery.jpg" alt="">
                 </a>
             <% else %>
                 <a href="<%= gallery_path(:id => gallery.id) %>">
@@ -39,5 +42,6 @@
   <%= link_to 'New', new_gallery_path, :class => 'btn btn-small btn-warning' %>
           <% end %>
       <% end %>
+</div>
 </div>
 </div>

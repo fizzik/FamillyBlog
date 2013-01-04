@@ -9,7 +9,8 @@ class LettersController < ApplicationController
   end
   def index
     @letters = Letter.all
-
+    @letters = Letter.desc
+    @letters = Letter.last(7)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @letters }

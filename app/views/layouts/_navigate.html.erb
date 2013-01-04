@@ -18,6 +18,9 @@
 </li>
 <% if signed_in? %>
     <% if current_user.admin? %>
+        <li>
+          <a href="/admin">Роботы</a><span class="divider">/</span>
+        </li>
 <li>
   <a href="/admin">Aдминка</a><span class="divider">/</span>
 </li>
