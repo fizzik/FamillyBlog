@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>FamillyBlog</title>
+  <title>MyBlog</title>
   <link href="/bootstrap.css" rel="stylesheet">
   <%= stylesheet_link_tag  "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application", "rails.validations", "rails.validations.custom" %>
   <title><%= yield :title %></title>
 
   <%= csrf_meta_tags %>
@@ -27,25 +27,17 @@
          </ul>
         </div>
         <div class="span4">
+
           <% if signed_in? %>
               <% @user = current_user %>
               <%= render 'layouts/mini_profile' %>
           <% else %>
 
-                <blockquote>
-                  <div class="button_mini_profile">
-                    <a class="btn btn-large" href="/signup" ><i class="icon-ok"></i> Создать профиль </a>
-                  </div>
-                  <small>f you dont have a profile on the my blog, you can created by clicking on the button "Sign up now"!</small>
-                </blockquote>
-                <blockquote>
-                  <div class="button_signin">
-                    <a class="btn btn-info" href="/signin"><i class="icon-home"></i> Вход </a>
-                  </div>
-                  <small>f you have account on my blog, you can by clicking on the button "Sign in"!</small>
-                </blockquote>
+                <%=  render 'layouts/signin' %>
 
           <% end %>
+
+          <%= render 'layouts/admin_sector' %>
 
             <%=  render 'service/local' %>
 

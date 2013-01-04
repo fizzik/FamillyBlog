@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h
 
   has_many :comments
-  has_one :user_infos
   has_many :evaluations, class_name: "RSEvaluation", as: :source
+  has_one :miniadmin
 
   mount_uploader :image,ImageUploader
   after_update :crop_image
@@ -49,7 +49,13 @@ class User < ActiveRecord::Base
   validates :password, :presence     => true,
             :confirmation => true,
             :length       => { :within => 6..40 }
-  #validates :image, :presence => true
+
+  validates :about, :length => {:maximum => 340}
+  validates  :skype, :length => {:maximum => 15}
+  validates  :phone, :length => {:maximum => 15}
+  validates  :date_of_birth, :length => {:maximum => 20}
+  validates  :town, :length => {:maximum => 15}
+  validates :image, :presence => true
 
 
   before_save :encrypt_password

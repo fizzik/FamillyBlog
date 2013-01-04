@@ -1,0 +1,53 @@
+<div class= "admin_sector">
+ <div class="heid_admin_sector">
+   <div class="text_admin_sector">
+ <p class="muted">► Связь:</p>
+   </div>
+   <% if signed_in? %>
+   <div class="info_admin_sector">
+    <p class="muted"> Мой cкайп: stereotip_2oo9</p>
+     <p class="muted"> Моя Електронная почта: vitaleks2012@i.ua</p>
+
+   </div>
+   <% else %>
+       <div class="info_admin_sector">
+         <p class="text-error"> ► Авторизуйтесь чтобы видить больше информации!</p>
+       </div>
+
+       <% end %>
+ </div>
+
+
+<div class="miniadmin_image">
+  <%=  image_tag ("myphoto.jpg"), :size => '130x130', :class => 'img-polaroid' %>
+</div>
+  <% if signed_in? %>
+      <div class= "button_admin">
+
+        <p class="text-error">
+          <a href="/letters/new">
+            <i class="icon-envelope"></i>
+            Написать письмо
+          </a>
+          <br/>
+
+          <a href="/questions/new">
+            <i class="icon-question-sign"></i>
+            Задать мне вопрос
+          </a>
+          <br/>
+
+          <a href="/users/1">
+            <i class="icon-user"></i>
+            Моя страниця
+          </a>
+        </p>
+
+      </div>
+  <% end %>
+
+<br/>
+
+  <br/>
+  </div>
+

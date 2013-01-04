@@ -1,7 +1,5 @@
 FamillyBlog::Application.routes.draw do
 
-
-
   resources :galleries do
     resources :pictures do
       collection do
@@ -11,7 +9,6 @@ FamillyBlog::Application.routes.draw do
   end
 
   resources :events
-
 
   resources :letters
 

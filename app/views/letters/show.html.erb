@@ -1,34 +1,32 @@
 <% if signed_in? %>
     <% if current_user.admin? %>
 
-
-        <p id="notice"><%= notice %></p>
-
-        <p>
-          <b>Fio:</b>
-          <%= @letter.fio %>
-        </p>
-
-        <p>
-          <b>Letter:</b>
-          <%= @letter.letter %>
-        </p>
-
-        <p>
-          <b>Phone:</b>
-          <%= @letter.phone %>
-        </p>
-
-        <p>
-          <b>Town:</b>
-          <%= @letter.town %>
-        </p>
-
-        <p>
-          <b>Email:</b>
-          <%= @letter.email %>
-        </p>
+        <div class ="reg_user">
+          <p class="text-error"> ► Прислал, <%= @letter.fio %>!</p>
+        </div>
+        <div class="letters_show">
+        <dl>
+          <dt><p class="text-error">Письмо:</p></dt>
+          <dd><p class="muted"> <%= @letter.letter %></p></dd>
+        </dl>
+        <dl>
+          <dt><p class="text-error">Номер телефона:</p></dt>
+          <dd><p class="muted">  <%= @letter.phone %></p></dd>
+        </dl>
+        <dl>
+          <dt><p class="text-error">Город:</p></dt>
+          <dd><p class="muted">  <%= @letter.town %></p></dd>
+        </dl>
+        <dl>
+          <dt><p class="text-error">Електронная почта:</p></dt>
+          <dd><p class="muted"><%= @letter.email %></p></dd>
+        </dl>
+        <%= link_to 'Назад', letters_path, :class=>'btn btn-small' %>
+        </div>
 <% else %>
-<h4> Your letter is sent! </h4>
+        <div class ="reg_user">
+          <p class="text-error"> ► Ваше письмо отправлено, я отвечу вам как только прочитаю его!</p>
+
+            </div>
     <% end %>
 <% end %>

@@ -36,7 +36,7 @@
   <div class="text">
 <%= @post.idea %>
   </div>
-<br
+<br/>
 
 <br/>
 <div class="like">
@@ -46,6 +46,9 @@
 <br/>
 <div class="heid_comment_post">
   <p class="text-error">Оставте свой коментарий:</p>
+ <div class ="counter_post_comments">
+   <p class="muted">Всего коментариев:  <%= pluralize @post.comments.size, "",  %> </p>
+  </div>
 </div>
 <br/>
 <%= render 'service/comments' %>

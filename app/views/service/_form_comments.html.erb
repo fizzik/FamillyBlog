@@ -10,4 +10,10 @@
         <%= submit_tag "add comment" %>
     <% end %>
     </div>
+<% else %>
+    <div class="alert alert-error">
+      <h4 class="alert alert-error">Предупреждение!</h4>
+      Только зарегистрирование пользователи могут оставлять коментарии!
+      <a class="btn btn-small" href="/signup">Cоздать профиль</a>
+    </div>
 <% end %>
