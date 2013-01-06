@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
 
 
   def index
-    @comments = Comment.desc
+    @comments = Comment.desc.last(5)
   end
 
   def destroy

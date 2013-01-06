@@ -17,8 +17,10 @@ FamillyBlog::Application.routes.draw do
   resources :comments   do
     member {post :vote}
   end
-
+  match '/about', :to => 'page#about'
+  match '/help', :to => 'page#help'
   match '/admin', :to => 'admin#admin'
+  match '/services', :to => 'page#services'
 
   get "sessions/new"
 
@@ -39,9 +41,9 @@ FamillyBlog::Application.routes.draw do
   end
   get "page/gallery"
   get "page/questions"
-  get "page/about"
-  get "page/contact"
-  get "page/help"
+
+  get "page/services"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
    root to: 'page#index',  as: 'page'

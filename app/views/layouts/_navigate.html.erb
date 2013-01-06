@@ -5,22 +5,20 @@
   <%= link_to 'Фото галерея', galleries_path %> <span class="divider">/</span>
 </li>
 <li>
-  <a href="/page/help">Помощь</a> <span class="divider">/</span>
-</li>
-<li>
-  <a href="/page/about">О проекте</a> <span class="divider">/</span>
-</li>
-<li>
   <%= link_to 'Вопросы', questions_path %><span class="divider">/</span>
 </li>
 <li>
-  <a href="/page/contact">Контакт</a><span class="divider">/</span>
+  <a href="/about">О проекте</a> <span class="divider">/</span>
+</li>
+<li>
+  <a data-toggle="modal" href="/help">Помощь</a> <span class="divider">/</span>
+</li>
+<li>
+  <a href="/services">Услуги</a><span class="divider">/</span>
 </li>
 <% if signed_in? %>
     <% if current_user.admin? %>
-        <li>
-          <a href="/admin">Роботы</a><span class="divider">/</span>
-        </li>
+
 <li>
   <a href="/admin">Aдминка</a><span class="divider">/</span>
 </li>
@@ -47,3 +45,4 @@
   </div>
 </li>
 </ul>
+

@@ -20,6 +20,14 @@
         </p>
       </div>
 
+      <div class="link_delete">
+        <% if signed_in? %>
+            <% if current_user.admin? %>
+                <%= link_to "Удалить", post, :method => :delete,
+                            :title => "Delete #{post.idea}" %>
+            <% end %>
+        <% end %>
+      </div>
       <div class="link">
         <p><%=  link_to "Читать дальше...", post %> </p>
       </div>
@@ -27,18 +35,7 @@
 
 
     </div>
-      <div class="link_delete">
-    <% if signed_in? %>
-        <% if current_user.admin? %>
-            <%= link_to "Удалить", post, :method => :delete,
-                        :title => "Delete #{post.idea}" %>
-        <% end %>
-    <% end %>
-      </div>
+
 
 <% end %>
-    <% if signed_in? %>
-<% if current_user.admin? %>
-<%= link_to 'New Post', new_post_path %>
- <% end %>
-<% end %>
+

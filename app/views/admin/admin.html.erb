@@ -1,14 +1,16 @@
 <% if signed_in? %>
     <% if current_user.admin? %>
-<blockquote>
-  <span class="label">Time now <%= Time.now %></span>
-  <p>Welcom to admin page tis blog.</p>
-  <small>Hence you can manage blog. </small>
-  <%= link_to 'Add post', new_post_path %>   <br/>
-  <%= link_to 'Users list', users_path %> <br/>
-  <%= link_to 'Your Asks', questions_path %><br/>
-  <%= link_to 'Your Letters', letters_path %>
-</blockquote>
+
+<div class="admin">
+  <ul class="nav nav-pills">
+    <li><%= link_to 'Добавить посты', new_post_path %></li>
+    <li> <%= link_to 'Пользователи', users_path %></li>
+    <li> <%= link_to 'Мои вопросы', questions_path %></li>
+    <li>  <%= link_to 'Письма', letters_path %></li>
+  </ul>
+</div>
+  <br/>
+
 <% else %>
         <div class="alert alert-error">
           <h4 class="alert alert-error">Внимание!</h4>
