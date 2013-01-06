@@ -7,8 +7,20 @@ class User < ActiveRecord::Base
   has_many :evaluations, class_name: "RSEvaluation", as: :source
   has_one :miniadmin
 
+
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
   mount_uploader :image,ImageUploader
   after_update :crop_image
+
+
 
   def to_jq_upload
     {

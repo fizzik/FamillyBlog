@@ -8,7 +8,8 @@ class UsersController < ApplicationController
 
 
   def index
-    @title = "All users"
+
+    @users = User.search(params[:search])
     @users = User.paginate(:page => params[:page], :per_page => 15)
   end
 

@@ -16,9 +16,9 @@
 
       <div class="navigate_mini_prof">
       <ul class="nav nav-pills">
-        <li><%= link_to "Профиль", current_user, :rel=>"tooltip", :title=>"Напишыте мне письмо прямо сейчас!" %></li>
-        <li> <%= link_to "Настройки", edit_user_path(current_user) %></li>
-        <li><%= link_to "Вийти", signout_path, :method => :delete %></li>
+        <li><%= link_to "Профиль", current_user, :rel=>"tooltip", :title=>"Ваш профиль" %></li>
+        <li> <%= link_to "Настройки", edit_user_path(current_user), :rel=>"tooltip", :title=>"Настройки профиля" %></li>
+        <li><%= link_to "Вийти", signout_path, :rel=>"tooltip", :title=>"Покинуть сайт", :method => :delete %></li>
       </ul>
       </div>
 

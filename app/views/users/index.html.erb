@@ -1,22 +1,40 @@
 <% if signed_in? %>
     <% if current_user.admin? %>
-<h4>All users</h4>
+<center><h4>Пользователи</h4></center>
+        <hr/>
+        <%= form_tag users_path, :method => 'get' do %>
+            <p>
+              <%= text_field_tag :search, params[:search], :placeholder=>"Поиск..." %>
+            <div class="button">
+              <%= submit_tag "Поиск", :name => nil, :class=> 'btn btn-small' %>
+            </div>
+            </p>
+        <% end %>
 <%= will_paginate %>
 <ul class="users">
   <% @users.each do |user| %>
+
       <div class="image_user_all">
-        <%= image_tag user.image_url.to_s, :size => '80x80'%>
+
+
+          <%= link_to user.name, user %>
+
+
       </div>
-      <li>
-        <%= user.email %> ,
-        <%= link_to user.name, user %>
-      </li>
-      <% if current_user.admin? %>
-          | <%= link_to "delete", user, :method => :delete, :confirm => "You sure?",
+      <div class="delete_user">
+        <% if current_user.admin? %>
+            <%= link_to "Удалить", user, :method => :delete, :confirm => "Вы уверены?",
                         :title => "Delete #{user.name}" %>
-      <% end %>
+            </div>
+        <% end %>
+      <hr/>
+
+
+
   <% end %>
+
 </ul>
+
 <%= will_paginate %>
     <% else %>
         <div class="alert alert-error">

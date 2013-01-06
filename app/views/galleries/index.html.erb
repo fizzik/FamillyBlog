@@ -10,7 +10,9 @@
           <div class="thumbnail">
             <% if gallery.cover.blank? or !Picture.find_by_id(gallery.cover) %>
                 <a href="<%= gallery_path(:id => gallery.id) %>">
+                  <p class="muted"><%= gallery.name %></p>
                   <img src="/assets/photogalery.jpg" alt="">
+
                 </a>
             <% else %>
                 <a href="<%= gallery_path(:id => gallery.id) %>">

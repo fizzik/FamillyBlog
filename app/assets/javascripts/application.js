@@ -27,7 +27,8 @@
 //= require jquery.fileupload-ui
 //= require locale
 //= require main
-
+//= require bootstrap.js
+//= require bootstrap.min.js
 //= require pictures
 
 //= require slimbox2
@@ -35,4 +36,8 @@
 //= require twitter/bootstrap
 //= require bootstrap-image-gallery.min
 $('#example').popover(options)
+$('#myModal').modal({
+    keyboard: false
+})
+$('[data-toggle=model]').modal()
 

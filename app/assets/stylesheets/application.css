@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap-wysihtml5
  *= require_tree .
 */
 /* background */
@@ -331,9 +332,10 @@ margin-left: 505px;
     margin-left: 7px;
 }
 .text{
-    margin-top: -30px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-top: -45px;
+    margin-left:7px;
+    text-align:  left;
+
 }
 .heid_post{
     width: 578px;
@@ -363,7 +365,8 @@ margin-left: 505px;
 }
 /* like */
 .likes{
-    margin-left: 495px;
+    margin-left: 440px;
+    margin-top: -25px;
 
 }
 /* Questions */
@@ -524,7 +527,7 @@ margin-left: 5px;
 }
 .button_admin{
     margin-left: 3px;
-    margin-top: -95px;
+    margin-top: -60px;
 }
 /* signin */
 .sign_in{
@@ -558,4 +561,15 @@ margin-left: 7px;
 }
 .letters_show{
     margin-left: 7px;
+}
+/* admin */
+.admin{
+    margin-left: 86px;
+}
+.user_index{
+    margin-left: 7px;
+}
+.delete_user{
+    margin-left: 465px;
+    margin-top: -70px;
 }

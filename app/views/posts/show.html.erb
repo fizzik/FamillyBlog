@@ -12,18 +12,20 @@
 
 <br/>
 <br/>
+<div class="likes">
+  <% if signed_in? %>
+      <%= link_to "Понравилось ", vote_post_path(@post, type: "up"), method: "post" %>
+  <% end %>
+
+  <i class="icon-thumbs-up"></i> <%= pluralize @post.reputation_for(:votes).to_i, "" %>
+</div>
 <div class ="title">
 
  <strong> <em><%= @post.title %></em>  </strong>
 
 </div>
-<div class="likes">
-<% if signed_in? %>
-    <%= link_to " Like ", vote_post_path(@post, type: "up"), method: "post" %>
-<% end %>
+<br/>
 
-  <i class="icon-thumbs-up"></i> <%= pluralize @post.reputation_for(:votes).to_i, "" %>
-</div>
 
 <div class="image_post">
   <%= image_tag @post.image_url.to_s, size: '250x250', :class=>"img-polaroid"%>
@@ -34,7 +36,7 @@
 
 
   <div class="text">
-<%= @post.idea %>
+    <%= @post.idea %>
   </div>
 <br/>
 

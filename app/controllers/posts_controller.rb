@@ -6,6 +6,7 @@ class PostsController < ApplicationController
   end
   def index
     @posts = Post.search(params[:search])
+    @posts = Post.desc.last(10)
     @posts = Post.find_with_reputation(:votes, :all, order: "votes desc")
 
 
