@@ -13,6 +13,9 @@ gem "bootstrap-wysihtml5-rails", "~> 0.3.1.14"
 
 gem 'meta_search'
 
+gem 'mysql2', '0.3.11'
+gem 'yaml_db'
+gem 'rails_db_dump'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,9 +24,7 @@ group :production do
   gem 'pg'
   gem 'thin'
 end
-group :development, :test do
-  gem "sqlite3"
-end
+
 gem 'execjs'
 
 gem 'bullet', group: :development

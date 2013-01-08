@@ -16,10 +16,11 @@
 
 class AddEvaluationsIndex < ActiveRecord::Migration
   def self.up
-    add_index :rs_evaluations, [:reputation_name, :source_id, :source_type, :target_id, :target_type], :name => "index_rs_evaluations_on_reputation_name_and_source_and_target"
+    add_index :rs_evaluations, [:reputation_name, :source_id,  :source_type, :target_id,  :target_type], :name => "index_rs_evaluations_on_reputation"
+    PRIMARY KEY(lang,reputation_name(75),source_id(228),source_type(228),target_id(228),target_type(228))
   end
 
   def self.down
-    remove_index :rs_evaluations, :name => "index_rs_evaluations_on_reputation_name_and_source_and_target"
+    remove_index :rs_evaluations, :name => "index_rs_evaluations_on_reputation"
   end
 end
