@@ -204,7 +204,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   meta_search
-  mysql2 (= 0.3.11)
+  mysql2
   pg
   progress_bar
   rails (= 3.2.8)

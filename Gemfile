@@ -13,7 +13,7 @@ gem "bootstrap-wysihtml5-rails", "~> 0.3.1.14"
 
 gem 'meta_search'
 
-gem 'mysql2', '0.3.11'
+gem 'mysql2'
 gem 'yaml_db'
 gem 'rails_db_dump'
 
@@ -27,7 +27,7 @@ end
 
 gem 'execjs'
 
-gem 'bullet', group: :development
+gem 'bullet'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -62,4 +62,4 @@ gem 'client_side_validations-simple_form', '2.0.1'
 
 # To use debugger
 # gem 'debugger'
-gem 'activerecord-reputation-system', require: 'reputation_system'
+gem 'activerecord-reputation-system', :require => 'reputation_system'
