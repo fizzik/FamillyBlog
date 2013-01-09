@@ -8343,4 +8343,61 @@ Need Counter Cache
   Post => [:comments]2013-01-06 17:39:55[WARN] user: vitalekspc
 localhost:3000http://localhost:3000/posts
 Need Counter Cache
+  Post => [:comments]2013-01-08 20:17:03[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:18:09[WARN] user: vitalekspc
+localhost:3000/posts
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:19:14[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:19:50[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:20:00[WARN] user: vitalekspc
+localhost:3000/posts
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:20:12[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:20:42[WARN] user: vitalekspc
+localhost:3000/posts
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:20:47[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:21:13[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:21:40[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:26[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:35[WARN] user: vitalekspc
+localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:39[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:41[WARN] user: vitalekspc
+localhost:3000/help
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:46[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:48[WARN] user: vitalekspc
+localhost:3000/help
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:51[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:27:54[WARN] user: vitalekspc
+localhost:3000/services
+Need Counter Cache
+  Post => [:comments]2013-01-08 20:28:02[WARN] user: vitalekspc
+localhost:3000/
+Need Counter Cache
   Post => [:comments]

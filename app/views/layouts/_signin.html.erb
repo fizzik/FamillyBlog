@@ -18,7 +18,7 @@
     <%= f.label :password, "Пароль:" %>
     <br/>
     <div class="field">
-      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13' %></div>  <%= f.password_field :password %>
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой пароль." %></div>  <%= f.password_field :password %>
     </div>
       <label>
         <%= f.check_box :remember_me %>

@@ -1,0 +1,22 @@
+
+<%= form_for(:session, :url => sessions_path) do |f| %>
+
+
+    <%= f.label :email, "Електронная почта:" %>
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой email адрес которий использовали при регистрации." %></div>  <%= f.text_field :email %>
+    </div>
+    <%= f.label :password, "Пароль:" %>
+    <br/>
+    <div class="field">
+      <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13' %></div>  <%= f.password_field :password %>
+    </div>
+    <label>
+      <%= f.check_box :remember_me %>
+    </label>
+    <div class="text_remember"><p class="text-error">Запомнить меня</p></div>
+
+    <%= f.submit "Вход", :class => 'btn btn-small' %>
+
+<% end %>

@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-
-gem 'bootstrap-sass', '2.0.4'
 gem 'will_paginate', '3.0.3'
 gem 'carrierwave'
 gem 'kaminari'
@@ -15,17 +13,22 @@ gem "bootstrap-wysihtml5-rails", "~> 0.3.1.14"
 
 gem 'meta_search'
 
+gem 'mysql2'
+gem 'yaml_db'
+gem 'rails_db_dump'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :production do
+  gem 'heroku'
   gem 'pg'
+  gem 'thin'
+  gem 'activerecord-postgresql-adapter'
 end
-group :development, :test do
-gem 'sqlite3', '1.3.6'
-end
+
 gem 'execjs'
 
-gem 'bullet', group: :development
+gem 'bullet'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -60,4 +63,4 @@ gem 'client_side_validations-simple_form', '2.0.1'
 
 # To use debugger
 # gem 'debugger'
-gem 'activerecord-reputation-system', require: 'reputation_system'
+gem 'activerecord-reputation-system', :require => 'reputation_system'
