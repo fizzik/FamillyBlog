@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
                              params[:session][:password])
     if user.nil?
 
-      redirect_to (:back)
+    redirect_to (:back)
+
     else
       sign_in user
       redirect_back_or user

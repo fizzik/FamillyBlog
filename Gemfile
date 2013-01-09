@@ -23,6 +23,7 @@ group :production do
   gem 'heroku'
   gem 'pg'
   gem 'thin'
+  gem 'activerecord-postgresql-adapter'
 end
 
 gem 'execjs'
