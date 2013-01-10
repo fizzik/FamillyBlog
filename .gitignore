@@ -12,4 +12,8 @@
 
 
 # Ignore all logfiles and tempfiles.
+.idea/workspace.xml
+/log/development.log
+
+
 
