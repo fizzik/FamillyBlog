@@ -22,7 +22,8 @@ gem 'rails_db_dump'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :production do
   gem 'heroku'
-  gem 'pg'
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+   gem "pg"
   gem 'thin'
   gem 'activerecord-postgresql-adapter'
 end

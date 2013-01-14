@@ -175,6 +175,7 @@ GEM
       sinatra (~> 1.0.0)
     therubyracer (0.10.2)
       libv8 (~> 3.3.10)
+    therubyracer-heroku (0.8.1.pre3)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -228,6 +229,7 @@ DEPENDENCIES
   sunspot_solr
   taps
   therubyracer
+  therubyracer-heroku (= 0.8.1.pre3)
   thin
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
