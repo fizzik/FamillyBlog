@@ -17,6 +17,7 @@ gem 'meta_search'
 gem 'mysql2'
 gem 'yaml_db'
 gem 'rails_db_dump'
+gem 'pdf-writer', :git => 'git://github.com/metaskills/pdf-writer.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
