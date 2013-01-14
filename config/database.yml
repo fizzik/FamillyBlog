@@ -2,11 +2,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: railsdb
+  database: project
   pool: 5
   timeout: 5000
-  username: railsuser
-  password: railspass
+  password: "1234"
   host: localhost
 
 
@@ -14,22 +13,20 @@ development:
 test:
    adapter: mysql2
    encoding: utf8
-   database: railsdb
+   database: project
    pool: 5
    timeout: 5000
-   username: railsuser
-   password: railspass
+   password: "1234"
    host: localhost
 
 
 production:
    adapter: mysql2
    encoding: utf8
-   database: railsdb
+   database: project
    pool: 5
    timeout: 5000
-   username: railsuser
-   password: railspass
+   password: "1234"
    host: localhost
 
 
