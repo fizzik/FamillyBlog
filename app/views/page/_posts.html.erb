@@ -1,4 +1,4 @@
-<% @posts.each do |post| %>
+<% @posts.desc.each do |post| %>
 
 
     <div class="blocke">
@@ -8,13 +8,13 @@
       <strong><%= post.title%></strong>
 
 
-      <p><%= truncate(strip_tags(post.idea), length: 80)  %></p>
+      <p><%= truncate(strip_tags(post.idea), :length => 80)  %></p>
 
 
       <div class = "counter_comments">
 
         <p class="text-error">
-        <%= pluralize post.comments.size, "",  %> <i class=" icon-comment"></i> |
+        <%= pluralize post.comments.size, ""  %> <i class=" icon-comment"></i> |
         <%= pluralize post.reputation_for(:votes).to_i, "" %>  <i class=" icon-thumbs-up"></i>
         </p>
       </div>

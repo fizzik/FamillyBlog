@@ -4,7 +4,7 @@
 
       <div class="heid_mini_prof">
         <div class="date_mini_prof">
-        <p class="muted"> ► На сайте з: <%= time_tag(@user.created_at) %> </p>
+        <p class="muted"> ► На сайте c: <%= time_tag(@user.created_at) %> </p>
         </div>
       </div>
     <div class="mini_profile">
@@ -23,7 +23,7 @@
       </div>
 
             <div class="image_mini_profile">
-             <%= image_tag @user.image_url.to_s, size: '70x70'%>
+             <%= image_tag @user.image_url.to_s, :size => '70x70'%>
             </div>
 
 <% end %>

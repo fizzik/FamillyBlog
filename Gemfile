@@ -17,17 +17,12 @@ gem 'meta_search'
 gem 'mysql2'
 gem 'yaml_db'
 gem 'rails_db_dump'
-gem 'pdf-writer', :git => 'git://github.com/metaskills/pdf-writer.git'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-group :production do
-  gem 'heroku'
-  gem 'therubyracer-heroku', '0.8.1.pre3'
-   gem "pg"
-  gem 'thin'
-  gem 'activerecord-postgresql-adapter'
-end
+
+
 
 gem 'execjs'
 
