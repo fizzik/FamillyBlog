@@ -17,7 +17,7 @@
 class CreateReputationSystem < ActiveRecord::Migration
   def self.up
     create_table :rs_evaluations do |t|
-      t.string      :reputation_name, varchar(25)
+      t.string      :reputation_name,
       t.references  :source, :polymorphic => true
       t.references  :target, :polymorphic => true
       t.float       :value, :default => 0
@@ -42,7 +42,7 @@ class CreateReputationSystem < ActiveRecord::Migration
 
     create_table :rs_reputation_messages do |t|
       t.references  :sender, :polymorphic => true
-      t.integer     :receiver_id, varchar(100)
+      t.integer     :receiver_id,
       t.float       :weight, :default => 1
       t.timestamps
     end

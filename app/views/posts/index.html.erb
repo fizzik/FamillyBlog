@@ -10,12 +10,12 @@
       <strong><%= post.title%></strong>
 
 
-      <p><%= truncate(strip_tags(post.idea), length: 80)  %></p>
+      <p><%= truncate(strip_tags(post.idea), :length => 80)  %></p>
 
       <div class = "counter_comments">
 
         <p class="text=error">
-        <%= pluralize post.comments.size, "",  %> <i class=" icon-comment"></i> |
+        <%= pluralize post.comments.size, ""  %> <i class=" icon-comment"></i> |
         <%= pluralize post.reputation_for(:votes).to_i, "" %>  <i class=" icon-thumbs-up"></i>
         </p>
       </div>
@@ -38,4 +38,15 @@
 
 
 <% end %>
+<center><div class="pagination">
+  <ul>
+    <li><a href="?page=1">Начало</a></li>
+    <li><a href="?page=2">2</a></li>
+    <li><a href="?page=3">3</a></li>
+    <li><a href="?page=4">4</a></li>
+    <li><a href="?page=5">5</a></li>
+    <li><a href="?page=6">Конец</a></li>
+  </ul>
+</div> </center>
+
 

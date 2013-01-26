@@ -2,10 +2,8 @@ class PageController < ApplicationController
 
 
   def index
-    @posts = Post.search(params[:search])
     @posts = Post.desc.last(10)
-
-
+    @posts = Post.paginate(:page => params[:page],  :per_page => 5)
 
   end
 
