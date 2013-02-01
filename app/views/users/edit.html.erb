@@ -38,6 +38,14 @@
 
 
     <% if signed_in? %>
+          <% if signed_in? %>
+              <% if current_user.admin? %>
+          <div class="field">
+            <%= f.label :notes, "Статус:" %>
+            <%= f.select :notes, User::NOTES_TYPES, :prompt => 'Select status' %>
+          </div>
+                  <% end %>
+              <% end %>
         <div class="field">
           <%= f.label :skype, "Skype:" %>
           <br/>

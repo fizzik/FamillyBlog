@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def new
+    @total_users = User.count
     @title = "Sign in"
   end
 

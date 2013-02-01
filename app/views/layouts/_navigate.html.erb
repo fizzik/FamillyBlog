@@ -28,20 +28,28 @@
   <div class="search">
     <%= form_tag posts_path, :method => 'get' do %>
         <p>
-          <%= text_field_tag :search, params[:search], :placeholder=>"Поиск..." %>
+          <%= text_field_tag :search, params[:search], :placeholder=>"Поиск по названию поста..." %>
         <div class="button">
           <%= submit_tag "Поиск", :name => nil, :class=> 'btn btn-small' %>
         </div>
         </p>
     <% end %>
   </div>
+
   <div class ="sort">
     Сортировать:
     <div class="btn-group" data-toggle="buttons-checkbox">
-      <%= link_to  "По популярности", posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
-      <%= link_to "По времени", page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
+      <%= link_to  "По времени", posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
+      <%= link_to "По популярности", page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
 
     </div>
+
+  </div>
+  <div class="statistic">
+  <div class="muted">
+  Сейчас  на сайте: <strong><%= rand(1-10) %></strong>
+  Всего зарегистрировано: <strong><%= pluralize(@total_users, "") %></strong>
+  </div>
   </div>
 </li>
 </ul>

@@ -2,8 +2,11 @@ class PageController < ApplicationController
 
 
   def index
-    @posts = Post.desc.last(10)
+
+
     @posts = Post.paginate(:page => params[:page],  :per_page => 5)
+    @posts = Post.desc.last(10)
+    @total_users = User.count
 
   end
 

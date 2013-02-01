@@ -5,11 +5,12 @@ class PostsController < ApplicationController
     redirect_to(current_user) unless current_user.admin?
   end
   def index
-    @posts = Post.desc.last(10)
-    @posts = Post.find_with_reputation(:votes, :all, :order => "votes desc")
+     @posts = Post.desc
     @posts = Post.paginate(:page => params[:page],  :per_page => 5)
-    @posts = Post.search(params[:search])
+    @posts = Post.find_with_reputation(:votes, :all, :order => "votes desc")
 
+    @posts = Post.search(params[:search])
+    @total_users = User.count
   respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
@@ -21,6 +22,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @total_users = User.count
     @post = Post.find(params[:id])
     respond_to do |format|
       format.html # show.html.erb
