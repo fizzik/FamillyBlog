@@ -211,6 +211,10 @@ ul.users {
     height: 200px;
     margin-left: 10px;
 }
+.counter_posts{
+    margin-left: 424px;
+    margin-top: -15px;
+}
 .counter_comments{
     margin-left: 485px;
 }
@@ -222,6 +226,10 @@ ul.users {
 .name_mini_profile{
     margin-left: 48px;
     margin-top: -26px;
+}
+.info_user_mini{
+    margin-left: 84px;
+    margin-top: -70px;
 }
 
 .image_mini_profile{
@@ -252,6 +260,14 @@ ul.users {
 }
 .navigate_mini_prof{
     margin-left: 14px;
+}
+.statistic_nav{
+    margin-left: 277px;
+    margin-top: 3px;
+}
+.statistic{
+    margin-left: 77px;
+    margin-top: -71px;
 }
 /* Buttons mini_profile */
 .button_mini_profile {
@@ -291,7 +307,7 @@ ul.users {
     display: block;
     overflow: hidden;
     max-width: 50px;
-    max-height: 70px;
+    max-height: 57px;
     margin-top: -20px;
     margin-left: 1px;
     border-radius: 3px;
@@ -332,7 +348,7 @@ margin-left: 505px;
     margin-left: 7px;
 }
 .text{
-    margin-top: -45px;
+    margin-top: 55px;
     margin-left:7px;
     text-align:  left;
 
@@ -484,9 +500,12 @@ margin-left: 505px;
 .pagination-right {
     text-align: right;
 }
+.error_sign_in{
+    margin-left: 20px;
+}
 /* tooltip */
 .too{
-    margin-left: 210px;
+    margin-left: 215px;
    margin-top: -28px;
 }
 /*post_page*/
@@ -527,7 +546,7 @@ margin-left: 5px;
 }
 .button_admin{
     margin-left: 3px;
-    margin-top: -60px;
+    margin-top: -5px;
 }
 /* signin */
 .sign_in{

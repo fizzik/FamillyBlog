@@ -22,6 +22,7 @@
         <div class="span8">
           <ul class="breadcrumb">
             <%= render 'layouts/navigate' %>
+
           <%= yield %>
 
          </ul>
@@ -34,7 +35,13 @@
           <% else %>
 
                 <%=  render 'layouts/signin' %>
-
+              <div class="error_sign_in">
+                <p class="text-error">
+              <% flash.each do |key, value| %>
+                  <div class="error <%= key %>"><%= value %></div>
+              <% end %>
+                </p>
+              </div>
           <% end %>
 
           <%= render 'layouts/admin_sector' %>

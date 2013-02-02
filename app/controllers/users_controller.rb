@@ -8,23 +8,26 @@ class UsersController < ApplicationController
 
 
   def index
-
+    @total_users = User.count
     @users = User.search(params[:search])
     @users = User.paginate(:page => params[:page], :per_page => 15)
   end
 
   def show
+    @total_users = User.count
     @user = User.find(params[:id])
     @title = @user.name
   end
 
   def new
+    @total_users = User.count
     @user = User.new
     @title = "Sign up"
 
   end
 
   def create
+    @total_users = User.count
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
@@ -37,6 +40,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @total_users = User.count
     @user = User.find(params[:id])
     @title = "Edit user"
 
@@ -73,7 +77,7 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    redirect_to(root_path) unless current_user.admin?
+    redirect_to(index_path) unless current_user.admin?
   end
   def correct_user_ban
     redirect_to(root_path) unless current_user?(@user)

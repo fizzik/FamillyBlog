@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def create
+    @total_users = User.count
     @comment = Comment.new
     @comment.content = params[:content]
     @comment.user_id = current_user.id
@@ -11,7 +12,7 @@ class CommentsController < ApplicationController
         format.html { redirect_to :back}
         format.js
       else
-        format.html { redirect_to :back, notice: "Field should not be empty and max 300 symbol" }
+        format.html { redirect_to :back, :notice => "Field should not be empty and max 300 symbol" }
       end
     end
   end

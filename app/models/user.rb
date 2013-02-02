@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation, :image, :remove_image, :skype, :phone, :date_of_birth, :town, :about, :crop_x, :crop_y, :crop_w, :crop_h
+  attr_accessible :name, :email, :password, :password_confirmation, :notes, :image, :remove_image, :skype, :phone, :date_of_birth, :town, :about, :crop_x, :crop_y, :crop_w, :crop_h
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h
 
   has_many :comments
@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
     FileUtils.cp(large_version, current_version)
   end
 
-
+   NOTES_TYPES = ["Online", "Offline"]
   def voted_for?(post)
     evaluations.where(target_type: post.class, target_id: post.id).present?
   end

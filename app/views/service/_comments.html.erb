@@ -12,7 +12,7 @@
             <div class="container_delete">
               <% if signed_in? %>
                   <% if current_user.admin? %>
-                      <%= link_to "x", comment, method: :delete, data: { confirm: 'Are you sure?' } %>
+                      <%= link_to "x", comment, :method => :delete %>
                   <% end %>
               <% end %>
             </div>

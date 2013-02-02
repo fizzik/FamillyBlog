@@ -1,9 +1,13 @@
-<% @posts.desc.each do |post| %>
+<div class="counter_posts">
+  <p class="muted">Количество записей: <%= pluralize @posts.count, "" %> </p>
+
+</div>
+<% @posts.each do |post| %>
 
 
     <div class="blocke">
 
-      <p class="muted"> <small><i class="icon-time"></i> Add <%= time_ago_in_words(post.created_at) %> ago</small> </p>
+      <p class="muted"> <small><i class="icon-time"></i> Добавлено: <%= (post.created_at.strftime('%F, %H:%M ')) %> </small> </p>
 
       <strong><%= post.title%></strong>
 
