@@ -212,7 +212,7 @@ ul.users {
     margin-left: 10px;
 }
 .counter_posts{
-    margin-left: 430px;
+    margin-left: 424px;
     margin-top: -15px;
 }
 .counter_comments{
@@ -261,9 +261,13 @@ ul.users {
 .navigate_mini_prof{
     margin-left: 14px;
 }
-.statistic{
+.statistic_nav{
     margin-left: 277px;
     margin-top: 3px;
+}
+.statistic{
+    margin-left: 77px;
+    margin-top: -71px;
 }
 /* Buttons mini_profile */
 .button_mini_profile {
@@ -496,9 +500,12 @@ margin-left: 505px;
 .pagination-right {
     text-align: right;
 }
+.error_sign_in{
+    margin-left: 20px;
+}
 /* tooltip */
 .too{
-    margin-left: 210px;
+    margin-left: 215px;
    margin-top: -28px;
 }
 /*post_page*/

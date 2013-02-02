@@ -11,6 +11,7 @@ gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'progress_bar'
 gem "bootstrap-wysihtml5-rails", "~> 0.3.1.14"
+gem 'simple_form', '2.0.4'
 
 gem 'meta_search'
 

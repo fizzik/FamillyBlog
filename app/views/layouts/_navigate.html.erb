@@ -39,13 +39,13 @@
   <div class ="sort">
     Сортировать:
     <div class="btn-group" data-toggle="buttons-checkbox">
-      <%= link_to  "По времени", posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
-      <%= link_to "По популярности", page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
+      <%= link_to  "По популярности", posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
+      <%= link_to "По времени", page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
 
     </div>
 
   </div>
-  <div class="statistic">
+  <div class="statistic_nav">
   <div class="muted">
   Сейчас  на сайте: <strong><%= rand(1-10) %></strong>
   Всего зарегистрировано: <strong><%= pluralize(@total_users, "") %></strong>

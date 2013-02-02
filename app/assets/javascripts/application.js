@@ -17,8 +17,8 @@
 //= require rails.validations.simple_form
 //= require jquery.ui.widget
 
-//= require jquery.Jcrop
 
+//= require twitter/bootstrap
 //= require load-image.min
 //= require canvas-to-blob.min
 //= require jquery.iframe-transport

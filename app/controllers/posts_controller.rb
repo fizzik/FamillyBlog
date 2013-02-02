@@ -5,11 +5,10 @@ class PostsController < ApplicationController
     redirect_to(current_user) unless current_user.admin?
   end
   def index
-     @posts = Post.desc
-    @posts = Post.paginate(:page => params[:page],  :per_page => 5)
     @posts = Post.find_with_reputation(:votes, :all, :order => "votes desc")
-
     @posts = Post.search(params[:search])
+
+
     @total_users = User.count
   respond_to do |format|
       format.html # index.html.erb
