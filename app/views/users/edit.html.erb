@@ -1,81 +1,74 @@
-<center><h4>Настройки</h4></center>
+<center><h4><%= t('.title') %></h4></center>
 <hr/>
 <div class="edit_profile">
 <%= form_for@user, :validate => true do |f| %>
-    <%= f.label :name, "Имя:" %>
+    <%= f.label :name,  t('.name') %>
 
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Ваше имя должно иметь не меньее 15 символов." %></div><%= f.text_field :name %>
     </div>
-    <%= f.label :email, "Електронная почта:" %>
+    <%= f.label :email, t('.email') %>
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой email адрес." %></div>  <%= f.text_field :email %>
     </div>
-    <%= f.label :password, "Пароль:" %>
+    <%= f.label :password, t('.password') %>
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Ваш пароль должен составлять не меньее 6 символов." %></div>  <%= f.password_field :password %>
     </div>
 
 
-    <%= f.label :password_confirmation, "Подтвердите пароль:" %>
+    <%= f.label :password_confirmation, t('.password_confirmation') %>
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой пароль ещо раз." %></div>  <%= f.password_field :password_confirmation %>
     </div>
     <p>
-      <%= f.label :image, "Загрузить фото:" %>
+      <%= f.label :image, t('.image') %>
       <%= f.file_field :image %>
     </p>
     <% if signed_in? %>
         <label>
           <%= f.check_box :remove_image %>
-          Удалить фото
+          <%=  t('.remove_image')%>
         </label>
         <% end %>
 
 
     <% if signed_in? %>
-          <% if signed_in? %>
-              <% if current_user.admin? %>
-          <div class="field">
-            <%= f.label :notes, "Статус:" %>
-            <%= f.select :notes, User::NOTES_TYPES, :prompt => 'Select status' %>
-          </div>
-                  <% end %>
-              <% end %>
+
         <div class="field">
           <%= f.label :skype, "Skype:" %>
           <br/>
           <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Введите ваш скайп" %></div> <%= f.text_field :skype %>
         </div>
         <div class="field">
-          <%= f.label :phone, "Номер телефона:" %>
+          <%= f.label :phone,  t('.phone') %>
           <br/>
           <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Введите ваш номер телефона" %></div><%= f.text_field :phone %>
         </div>
 
         <div class="field">
-          <%= f.label :date_of_birth, "День рождения:" %>
+          <%= f.label :date_of_birth,  t('.date_of_birth') %>
           <br/>
           <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Введите вашу дату рождения" %></div> <%= f.text_field :date_of_birth %>
         </div>
         <div class="field">
-          <%= f.label :town, "Город:" %>
+          <%= f.label :town,  t('.town') %>
           <br/>
           <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Введите ваш город" %></div> <%= f.text_field :town %>
         </div>
         <div class="field">
-          <%= f.label :about, "Коротко о себе:" %>
+          <%= f.label :about,  t('.about') %>
           <br/>
           <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Расскажите о себе" %></div> <%= f.text_area :about, rows: 6 %>
         </div>
     <% end %>
 
     <div class="actions">
-      <%= f.submit "Update" %>
+      <%= f.submit t('.update') %>
     </div>
 
 <% end %>

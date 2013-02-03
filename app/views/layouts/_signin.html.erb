@@ -1,6 +1,6 @@
 <div class="heid_sign_in">
   <div class="text_heid_sign_in">
-  <p class ="muted">► Вход на сайт:</p>
+  <p class ="muted">► <%= t('.sign_in') %>:</p>
   </div>
 </div>
 <br/>
@@ -10,12 +10,12 @@
 <%= form_for(:session, :url => sessions_path) do |f| %>
 
 
-    <%= f.label :email, "Електронная почта:" %>
+    <%= f.label :email, t('.email') %>
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой email адрес которий использовали при регистрации." %></div>  <%= f.text_field :email %>
     </div>
-    <%= f.label :password, "Пароль:" %>
+    <%= f.label :password,  t('.password') %>
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы должны ввести свой пароль." %></div>  <%= f.password_field :password %>
@@ -23,13 +23,13 @@
       <label>
         <%= f.check_box :remember_me %>
       </label>
-      <div class="text_remember"><p class="text-error">Запомнить меня</p></div>
+      <div class="text_remember"><p class="text-error"> <%= t('.remember_me')%></p></div>
 
-      <%= f.submit "Вход", :class => 'btn btn-small' %>
+      <%= f.submit  t('.signin_button'), :class => 'btn btn-small' %>
 
 <% end %>
   <div class="button_mini_profile">
-    <a class="btn btn-small" href="/signup" > Создать профиль </a>
+    <a class="btn btn-small" href="/signup" >  <%= t('.signup')%> </a>
   </div>
 
 </div>
