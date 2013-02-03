@@ -1,12 +1,12 @@
 <div class= "admin_sector">
  <div class="heid_admin_sector">
    <div class="text_admin_sector">
- <p class="muted">► Связь:</p>
+ <p class="muted">► <%= t('.contact') %></p>
    </div>
    <% if signed_in? %>
    <div class="info_admin_sector">
-    <p class="muted"> Мой cкайп: stereotip_2oo9</p>
-     <p class="muted"> Моя Електронная почта: vitaleks2012@i.ua</p>
+    <p class="muted"> <%= t('.skype') %>: stereotip_2oo9</p>
+     <p class="muted"> <%= t('.email') %>: vitaleks2012@i.ua</p>
 
    </div>
        <% if signed_in? %>
@@ -14,22 +14,23 @@
            <div class= "button_admin">
 
              <p class="text-error">
-               <a href="/letters/new">
+
                  <i class="icon-envelope"></i>
-                 Написать письмо
-               </a>
+                 <%= link_to t('.letter'), new_letter_path %>
+
                <br/>
 
-               <a href="/questions/new">
-                 <i class="icon-question-sign"></i>
-                 Задать мне вопрос
-               </a>
-               <br/>
+               <i class="icon-question-sign"></i>
+               <%= link_to t('.questions'), new_question_path  %>
 
-               <a href="/users/1">
-                 <i class="icon-user"></i>
-                 Моя страница
-               </a>
+
+
+               <br/>
+               <i class="icon-user"></i>
+               <%= link_to t('.my_page'), current_user  %>
+
+
+
              </p>
 
            </div>
@@ -38,7 +39,7 @@
 
    <% else %>
        <div class="info_admin_sector">
-         <p class="text-error"> ► Авторизуйтесь чтобы видеть больше информации!</p>
+         <p class="text-error"> ► <%= t('.info_admin') %></p>
        </div>
 
        <% end %>

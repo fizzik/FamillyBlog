@@ -1,0 +1,102 @@
+
+ru:
+  users:
+    new:
+      title: 'Регистрация'
+      name: 'Имя:'
+      email: 'Електронная почта:'
+      password: 'Пароль:'
+      password_confirmation: 'Подтверждение пароля:'
+      image: 'Загрузить фото:'
+      remove_image: 'Удалить фото:'
+      phone: 'Номер телефона:'
+      date_of_birth: 'Дата рождения:'
+      town: 'Город:'
+      about: 'О себе:'
+      create: 'Создать профиль'
+      info: 'Все поля обязательны к заполнению!'
+    show:
+      profile: 'Пользователь'
+      create: 'Создан:'
+      email: 'Електронная почта:'
+      name: 'Имя:'
+      phone: 'Номер телефона:'
+      date_of_birth: 'Дата рождения:'
+      town: 'Город:'
+      about: 'О себе:'
+    edit:
+      title: 'Настройки'
+      name: 'Имя:'
+      email: 'Електронная почта:'
+      password: 'Пароль:'
+      password_confirmation: 'Подтверждение пароля:'
+      image: 'Загрузить фото:'
+      remove_image: 'Удалить фото:'
+      phone: 'Номер телефона:'
+      date_of_birth: 'Дата рождения:'
+      town: 'Город:'
+      about: 'О себе:'
+      update: 'Готово'
+  layouts:
+    navigate:
+      admin: 'Админка'
+      home: 'Главная'
+      questions: 'Вопросы'
+      help: 'Помощь'
+      services: 'Услуги'
+      gallery: 'Фото галерея'
+      about: 'О проекте'
+      placeholder_search: 'Искать по названию поста...'
+      search: 'Поиск'
+      sort: 'Сортировать:'
+      sort_by_time: 'По времени'
+      sort_by_popularity: 'По популярности'
+      language: 'Язык:'
+      now_to_site: 'Сейчас на сайте:'
+      registred: 'Всего зарегистрировано:'
+    mini_profile:
+      site: 'На сайте с:'
+      hello: 'Привет'
+      my_profile: 'Профиль'
+      settings: 'Настройки'
+      logout: 'Выход'
+    admin_sector:
+     info_admin: 'Авторизуйтесь чтобы увидеть больше информации!'
+     contact: 'Связь:'
+     skype:  'Мой скайп'
+     email:  'Електронная почта'
+     letter: 'Написать письмо'
+     questions: 'Задать вопрос'
+     my_page: 'Моя страница'
+    signin:
+     sign_in: 'Вход на сайт'
+     email: 'Електронная почта:'
+     password: 'Пароль:'
+     remember_me: 'Запомнить меня'
+     signin_button: 'Вход'
+     signup: 'Создать профиль'
+  admin:
+    admin:
+      users: 'Пользователи'
+      my_letters: 'Мои письма'
+      my_questions: 'Вопросы'
+      new_post: 'Добавить пост'
+  gallery:
+    new:
+      name: 'Название галереи:'
+      description: 'Описание:'
+      cencel: 'Назад'
+  letters:
+    new:
+       title: 'Новое письмо'
+    form:
+      info: 'Поля с звездочкой обязательны к заполнению!
+      Пожалуйста укажите способ по которому я смогу связаться с вами!'
+      fio: '*ФИО:'
+      name: 'Имя:'
+      email: '*Ваша електронна почта:'
+      number_phone: 'Номер телефона:'
+      text: 'Письмо:'
+      town: 'Ваш город:'
+      send: 'Отправить'
+      encel: 'Отмена'

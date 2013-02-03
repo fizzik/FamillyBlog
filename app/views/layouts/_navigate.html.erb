@@ -1,26 +1,26 @@
 <li>
-  <a href="/">Главная</a> <span class="divider">/</span>
+  <a href="/"><%= t('.home') %></a> <span class="divider">/</span>
 </li>
 <li>
-  <%= link_to 'Фото галерея', galleries_path %> <span class="divider">/</span>
+  <%= link_to t('.gallery'), galleries_path %> <span class="divider">/</span>
 </li>
 <li>
-  <%= link_to 'Вопросы', questions_path %><span class="divider">/</span>
+  <%= link_to t('.questions'), questions_path %><span class="divider">/</span>
 </li>
 <li>
-  <a href="/about">О проекте</a> <span class="divider">/</span>
+  <a href="/about"><%= t('.about') %></a> <span class="divider">/</span>
 </li>
 <li>
-  <a data-toggle="modal" href="/help">Помощь</a> <span class="divider">/</span>
+  <a data-toggle="modal" href="/help"><%= t('.help') %></a> <span class="divider">/</span>
 </li>
 <li>
-  <a href="/services">Услуги</a><span class="divider">/</span>
+  <a href="/services"><%= t('.services') %></a><span class="divider">/</span>
 </li>
 <% if signed_in? %>
     <% if current_user.admin? %>
 
 <li>
-  <a href="/admin">Aдминка</a><span class="divider">/</span>
+  <a href="/admin"><%= t('.admin') %></a><span class="divider">/</span>
 </li>
 <% end %>
     <% end %>
@@ -28,29 +28,39 @@
   <div class="search">
     <%= form_tag posts_path, :method => 'get' do %>
         <p>
-          <%= text_field_tag :search, params[:search], :placeholder=>"Поиск по названию поста..." %>
+          <%= text_field_tag :search, params[:search], :placeholder=>t('.placeholder_search')  %>
         <div class="button">
-          <%= submit_tag "Поиск", :name => nil, :class=> 'btn btn-small' %>
+          <%= submit_tag t('.search'), :name => nil, :class=> 'btn btn-small' %>
         </div>
         </p>
     <% end %>
   </div>
 
   <div class ="sort">
-    Сортировать:
+   <%= t('.sort')%>
     <div class="btn-group" data-toggle="buttons-checkbox">
-      <%= link_to  "По популярности", posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
-      <%= link_to "По времени", page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
+      <%= link_to  t('.sort_by_popularity'), posts_path, :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по популярности"%>
+      <%= link_to t('.sort_by_time'), page_path,  :class => 'btn btn-mini', :rel=>"tooltip", :title=>"Сортировать посты по дате добавления" %>
 
     </div>
+
+     <br/>
+
 
   </div>
   <div class="statistic_nav">
   <div class="muted">
-  Сейчас  на сайте: <strong><%= rand(1-10) %></strong>
-  Всего зарегистрировано: <strong><%= pluralize(@total_users, "") %></strong>
+    <%= t('.now_to_site')%> <strong><%= rand(1-10) %></strong>
+    <%= t('.registred')%> <strong><%= pluralize(@total_users, "") %></strong>
+    <div class="language">
+      <p class="muted">
+      <%= t('.language')%> <%= link_to_unless_current 'English', :locale => 'en' %> |
+      <%= link_to_unless_current 'Russin', :locale => 'ru' %>
+      </p>
+    </div>
   </div>
   </div>
+
 </li>
 </ul>
 

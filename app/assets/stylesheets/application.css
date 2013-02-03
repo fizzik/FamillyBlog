@@ -111,6 +111,10 @@ a:visited {
     color: rgba(153, 18, 11, 0.53);
 }
 /* Navigation */
+.language{
+    margin-left: -285px;
+    margin-top: -16px;
+}
 nav {
     float: right;
 }
@@ -263,7 +267,7 @@ ul.users {
 }
 .statistic_nav{
     margin-left: 277px;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 .statistic{
     margin-left: 77px;
@@ -364,6 +368,11 @@ margin-left: 505px;
     margin-left: 5px ;
 }
 /* Photo gallery */
+.pictures_edit{
+    margin-left: 12px;
+    margin-top: 7px;
+
+}
 .container_photo_gallery{
     margin-left: 5px;
 

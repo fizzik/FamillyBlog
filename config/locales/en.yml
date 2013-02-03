@@ -2,6 +2,104 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
- errors:
-     messages:
-       name_format: "is not formatted properly"
+  users:
+    new:
+      title: 'Sign up'
+      name: 'Name:'
+      email: 'Email:'
+      password: 'Password:'
+      password_confirmation: 'Confirmation password:'
+      image: 'Download image:'
+      remove_image: 'Remove image:'
+      phone: 'Phone'
+      date_of_birth: 'Date of birth'
+      town: 'Town'
+      about: 'About me'
+      create: 'Create profile'
+      info: 'All fields are required!'
+    show:
+      profile: 'Profile'
+      create: 'Create:'
+      email: 'Email:'
+      name: 'Name:'
+      phone: 'Phone:'
+      date_of_birth: 'Date of birth:'
+      town: 'Town:'
+      about: 'About me:'
+    edit:
+      title: 'Edit profile'
+      name: 'Name:'
+      email: 'Email:'
+      password: 'Password:'
+      password_confirmation: 'Confirmation password:'
+      image: 'Download image:'
+      remove_image: 'Remove image:'
+      phone: 'Phone:'
+      date_of_birth: 'Date of birth:'
+      town: 'Town:'
+      about: 'About me:'
+      update: 'Update'
+  layouts:
+    navigate:
+      admin: 'Admin'
+      home: 'Home'
+      questions: 'Questions'
+      help: 'Help'
+      services: 'Services'
+      gallery: 'Photo gallery'
+      about: 'About Us'
+      placeholder_search: 'Search by name post...'
+      search: 'Search'
+      sort: 'Sort:'
+      sort_by_time: 'By time'
+      sort_by_popularity: 'By popularity'
+      language: 'Language:'
+      now_to_site: 'Now is online:'
+      registred: 'Registered:'
+    mini_profile:
+      site: 'Registration Date:'
+      hello: 'Hello'
+      my_profile: 'Profile'
+      settings: 'Settings'
+      logout: 'Exit'
+    admin_sector:
+      contact: 'Contact:'
+      skype:  'Skype'
+      email:  'Email'
+      letter: 'Write letter me'
+      questions: 'Ask me'
+      my_page: 'My profile'
+      info_admin: 'Log in to see more information!'
+    signin:
+      sign_in: 'Sign in'
+      email: 'Email:'
+      password: 'Password:'
+      remember_me: 'Remember me'
+      signin_button: 'Sign in'
+      signup: 'Sign up'
+  admin:
+    admin:
+      users: 'Users'
+  gallery:
+    new:
+      name: 'Name:'
+      description: 'Description:'
+      cencel: 'Cencel'
+      title: 'Create gallery'
+  letters:
+    new:
+       title: 'New Letter'
+    form:
+      info: 'Fields with a star are mandatory! Please specify the method by which I can contact you!'
+      fio: '*FIO:'
+      name: 'Name:'
+      email: '*Email:'
+      number_phone: 'Number phone:'
+      text: 'Text:'
+      town: 'Town:'
+      send: 'Send'
+      cencel: 'Cencel'
+
+
+
+

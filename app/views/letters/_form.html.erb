@@ -2,44 +2,44 @@
 <%= simple_form_for (@letter), :validate => true do |f| %>
 
       <div class ="reg_user">
-        <p class="text-error"> ► Поля с звездочкой обязательны к заполнению.</p>
+        <p class="text-error"> ► <%= t('.info')%></p>
         </div>
 
 
-    <%= f.label :fio, "ФИО:*" %>
+    <%= f.label :fio, t('.fio') %>
 
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажыте свои фамилию, имя, отчество" %></div><%= f.text_field :fio %>
     </div>
 
-    <%= f.label :letter, "Текст:*" %>
+    <%= f.label :letter, t('.text') %>
 
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "В ето поле вы можете ввести ваше письмо" %></div><%= f.text_area :letter, rows: 8 %>
     </div>
-    <%= f.label :phone, "Номер телефона:" %>
+    <%= f.label :phone, t('.number_phone') %>
 
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажите ваш номер телефона" %></div><%= f.text_field :phone %>
     </div>
-    <%= f.label :town, "Город:" %>
+    <%= f.label :town, t('.town') %>
 
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажите ваш город" %></div><%= f.text_field :town %>
     </div>
-    <%= f.label :email, "Ваша електронная почта:*" %>
+    <%= f.label :email, t('.email') %>
 
     <br/>
     <div class="field">
       <div class="too"><%=  image_tag ("question-mark.jpg"), size: '13x13', rel: "tooltip", title: "Укажите вашу електронную почту" %></div><%= f.text_field :email %>
     </div>
 
-    <%= link_to 'Отмена', posts_path, :class => 'btn btn-small' %>
-    <%= f.button :submit, "Послать" %>
+    <%= link_to t('.cencel'), posts_path, :class => 'btn btn-small' %>
+    <%= f.button :submit, t('.send') %>
 
 
 <% end %>

@@ -1,5 +1,6 @@
 FamillyBlog::Application.routes.draw do
 
+  scope ":locale" do
   resources :galleries do
     resources :pictures do
       collection do
@@ -10,43 +11,42 @@ FamillyBlog::Application.routes.draw do
 
   resources :events
 
-  resources :letters
 
   resources :questions
 
   resources :comments   do
     member {post :vote}
   end
-  match '/about', :to => 'page#about'
-  match '/help', :to => 'page#help'
-  match '/admin', :to => 'admin#admin'
-  match '/services', :to => 'page#services'
 
-  get "sessions/new"
 
+  resources :letters
   resources :users
-
-
-  match '/signup',  :to => 'users#new'
-
   resources :sessions, :only => [:new, :create, :destroy]
 
-  match '/signup',  :to => 'users#new'
-  match '/signin',  :to => 'sessions#new'
-  match '/signout', :to => 'sessions#destroy'
 
   resources :posts do
 
     member {post :vote}
   end
+  end
+
   get "page/gallery"
   get "page/questions"
-
+  get "sessions/new"
   get "page/services"
+  match '/about', :to => 'page#about'
+  match '/help', :to => 'page#help'
+  match '/admin', :to => 'admin#admin'
+  match '/services', :to => 'page#services'
+
+  match '/signup',  :to => 'users#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-   root to: 'page#index',  as: 'page'
+   root :to => 'page#index',  :as => 'page'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

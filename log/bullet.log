@@ -9983,4 +9983,325 @@ Need Counter Cache
   Post => [:comments]2013-02-02 17:12:43[WARN] user: vitalekspc
 localhost:3000http://localhost:3000/posts
 Need Counter Cache
+  Post => [:comments]2013-02-03 15:02:32[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:02:58[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:03:04[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:03:07[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:03:09[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:03:21[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:12:25[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:13:11[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:34:34[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:34:37[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:38:40[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:39:58[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:40:07[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:42:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:42:32[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:42:35[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:43:05[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:49:01[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 15:49:04[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:01:11[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:01:22[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:01:25[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:01:42[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:01:51[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:02:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:03:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:04:04[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:04:10[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:04:14[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:04:17[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/locale/posts?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:04:23[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/help
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:04:26[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:13:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:13:09[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:13:11[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:28:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:28:51[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:28:54[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 16:57:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:33:46[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:33:52[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:35:37[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:35:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:35:42[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:35:44[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:36:23[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:36:26[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:36:30[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:36:56[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:37:00[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:40:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:42:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:43:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:44:01[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:46:24[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:48:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:48:23[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:51:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:23[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:27[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:37[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:40[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:46[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:47[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 17:54:52[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:24:57[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:25:08[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:29:12[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:30:40[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:32:15[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:32:48[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:33:53[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:33:56[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:34:04[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:34:13[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:34:21[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:37:35[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:38:11[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:40:02[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:40:18[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:40:33[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:42:45[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:42:48[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:42:59[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:43:01[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:45:19[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:47:04[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:50:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:53:24[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:53:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:53:40[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:53:44[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:53:48[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 18:54:08[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:33:21[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:42:15[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:42:26[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:42:38[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:42:41[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:43:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:43:45[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:43:49[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:44:22[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:44:29[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:44:35[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:45:00[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-03 19:45:04[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
   Post => [:comments]
