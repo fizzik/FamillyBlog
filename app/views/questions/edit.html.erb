@@ -1,10 +1,10 @@
 <% if signed_in? %>
     <% if current_user.admin? %>
-<center><h4>Ответ</h4></center>
+<center><h4><%= t('.responce') %></h4></center>
 
 <%= form_for(@question) do |f| %>
 <div class="answers_page">
- <p class="text-error">► Введите ваш анонимний вопрос.</p>
+ <p class="text-error">► <%=t('.info')%>.</p>
             <div class="field">
            <hr/>
      <p class="text-error"> <%= @question.ask%></p>
@@ -13,11 +13,11 @@
 
 
             <div class="field">
-              <%= f.label :answer, 'Ваш ответ:' %>
+              <%= f.label :answer, t('.answer') %>
               <%= f.text_area :answer, rows: 2 %>
             </div>
     <div class="actions">
-      <%= f.submit "Добавить ответ", :class=> 'btn btn-small' %>
+      <%= f.submit t('.add_answer'), :class=> 'btn btn-small' %>
     </div>
 <% end %>
 
@@ -25,8 +25,8 @@
 
         <% else %>
         <div class="alert alert-error">
-          <h4 class="alert alert-error">Внимание!</h4>
-          У вас нет прав войти в административную область
+          <h4 class="alert alert-error"><%= t('.warning') %></h4>
+          <%= t('.admin') %>
 
         </div>
     <% end %>

@@ -53,10 +53,12 @@
     <%= t('.now_to_site')%> <strong><%= rand(1-10) %></strong>
     <%= t('.registred')%> <strong><%= pluralize(@total_users, "") %></strong>
     <div class="language">
+
       <p class="muted">
-      <%= t('.language')%> <%= link_to_unless_current 'English', :locale => 'en' %> |
+      <%= t('.language')%> <%= link_to_unless_current 'English', :locale => 'en'%> |
       <%= link_to_unless_current 'Russin', :locale => 'ru' %>
       </p>
+
     </div>
   </div>
   </div>

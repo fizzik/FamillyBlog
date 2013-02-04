@@ -14,25 +14,25 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title, "Название:" %>
+    <%= f.label :title, t('.name') %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :idea, "Осоновной текст:" %>
-    <%= f.text_area :idea, rows: 6 %>
+    <%= f.label :idea, t('.text') %>
+    <%= f.text_area :idea, :rows => 6 %>
   </div>
     <p>
       <%= f.file_field :image %>
     </p>
     <label>
       <%= f.check_box :remove_image %>
-      Remove image
+      <%= t('.remove_image')%>
     </label>
 
 
 
   <div class="actions">
-    <%= f.submit "Добвать пост", :class => 'btn btn-small' %>
+    <%= f.submit t('.add_post'), :class => 'btn btn-small' %>
   </div>
 <% end %>
 <% else %>

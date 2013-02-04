@@ -100,3 +100,80 @@ ru:
       town: 'Ваш город:'
       send: 'Отправить'
       encel: 'Отмена'
+    index:
+      sent: 'Прислал'
+      your_letters: 'Твои письма'
+      button_read: 'Читать'
+      button_delete: 'Удалить'
+    show:
+      sent_letter: 'Прислал'
+      letters: 'Письмо'
+      phone: 'Номер телелефона'
+      town:  'Город'
+      email: 'Електронная почта'
+      back:   'Назад'
+  questions:
+    new:
+      title: 'Введите ваш вопрос!'
+    form:
+      answer: 'Ответ:'
+      cencel: 'Отмена'
+      ask: 'Спросить'
+    index:
+      title: 'Вопросы'
+      delete: 'Удалить'
+      ask: 'Задать вопрос'
+      responce: 'Ответить'
+      add: 'Добавлено'
+      back: ' назад'
+      warning: 'Предупреждение!'
+      text_warning: 'Только зарегистрированные пользователи могут задавать мне вопросы.'
+      create_profile: 'Создать профиль'
+    edit:
+      responce: 'Ответ'
+      info: 'Вопросы.'
+      answer: 'Ваш ответ:'
+      add_answer: 'Добавить ответ'
+      warning: 'Предупреждение!'
+      admin: ' У вас нет прав войти в административную область!'
+  page:
+     posts: 'Количество записей'
+     add: 'Добавлено'
+     read: 'Читать дальше...'
+     index:
+       first: 'Начало'
+       last: 'Конец'
+
+  posts:
+     new:
+       title: 'Новая запись'
+     form:
+       name: 'Имя:'
+       text: 'Текст:'
+       add_post: 'Добавить пост'
+       image: 'Картинка:'
+       remove_image: 'Удалить картинку'
+     index:
+       title: 'Количество записей'
+       add: 'Добалвено'
+       delete: 'Удалить'
+       read:  'Читать дальше...'
+       first: 'Начало'
+       last:  'Конец'
+     show:
+       like: 'Понравилось'
+       comment: 'Оставте свой комментарий'
+       comments: 'Всего комментариев'
+  service:
+      comments:
+        back: 'назад.'
+      form_comments:
+        info: 'Ваш комментарий должен содержать не более 200 символов!'
+        button_comment: 'Добавить'
+      local:
+        socil: 'Я в интернете'
+
+
+
+
+

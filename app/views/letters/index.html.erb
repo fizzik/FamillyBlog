@@ -1,7 +1,7 @@
 
 <% if signed_in? %>
     <% if current_user.admin? %>
-    <center><h4>Ваши письма</h4></center>
+    <center><h4><%=t('.your_letters')%></h4></center>
         <hr/>
 
 
@@ -12,15 +12,15 @@
             </div>
             <div class="index_letters">
             <dl>
-              <dt><p class="text-error">Прислал:</p></dt>
+              <dt><p class="text-error"><%=t('.sent')%>:</p></dt>
               <dd><p class="muted"> <%= letter.fio %></p></dd>
             </dl>
             </div>
 
 
             <form class="well form-inline">
-            <%= link_to 'Читать', letter, :class=>'btn btn-small' %>
-            <%= link_to 'Удалить', letter,:class=>'btn btn-small', method: :delete, data: { confirm: 'Вы уверены?' } %>
+            <%= link_to t('.button_read'), letter, :class=>'btn btn-small' %>
+            <%= link_to t('.button_delete'), letter,:class=>'btn btn-small', method: :delete, data: { confirm: 'Вы уверены?' } %>
             </form>
             <hr/>
       <% end %>

@@ -2,26 +2,26 @@
     <% if current_user.admin? %>
 
         <div class ="reg_user">
-          <p class="text-error"> ► Прислал, <%= @letter.fio %>!</p>
+          <p class="text-error"> ►<%=t('.sent_letter')%>, <%= @letter.fio %>!</p>
         </div>
         <div class="letters_show">
         <dl>
-          <dt><p class="text-error">Письмо:</p></dt>
+          <dt><p class="text-error"><%=t('.letters')%>:</p></dt>
           <dd><p class="muted"> <%= @letter.letter %></p></dd>
         </dl>
         <dl>
-          <dt><p class="text-error">Номер телефона:</p></dt>
+          <dt><p class="text-error"><%=t('.phone')%>:</p></dt>
           <dd><p class="muted">  <%= @letter.phone %></p></dd>
         </dl>
         <dl>
-          <dt><p class="text-error">Город:</p></dt>
+          <dt><p class="text-error"><%=t('.town')%>:</p></dt>
           <dd><p class="muted">  <%= @letter.town %></p></dd>
         </dl>
         <dl>
-          <dt><p class="text-error">Електронная почта:</p></dt>
+          <dt><p class="text-error"><%=t('.email')%>:</p></dt>
           <dd><p class="muted"><%= @letter.email %></p></dd>
         </dl>
-        <%= link_to 'Назад', letters_path, :class=>'btn btn-small' %>
+        <%= link_to t('.back'), letters_path, :class=>'btn btn-small' %>
         </div>
 <% else %>
         <div class ="reg_user">

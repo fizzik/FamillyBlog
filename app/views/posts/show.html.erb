@@ -14,7 +14,7 @@
 <br/>
 <div class="likes">
   <% if signed_in? %>
-      <%= link_to "Понравилось ", vote_post_path(@post, type: "up"), method: "post" %>
+      <%= link_to t('.like'), vote_post_path(@post, type: "up"), method: "post" %>
   <% end %>
 
   <i class="icon-thumbs-up"></i> <%= pluralize @post.reputation_for(:votes).to_i, "" %>
@@ -44,9 +44,9 @@
 <br/>
 <br/>
 <div class="heid_comment_post">
-  <p class="text-error">Оставте свой коментарий:</p>
+  <p class="text-error"><%=t('.comment')%></p>
  <div class ="counter_post_comments">
-   <p class="muted">Всего коментариев:  <%= pluralize @post.comments.size, "",  %> </p>
+   <p class="muted"><%=t('.comments')%>:  <%= pluralize @post.comments.size, "",  %> </p>
   </div>
 </div>
 <br/>

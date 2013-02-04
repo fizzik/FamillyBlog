@@ -84,7 +84,7 @@ en:
     new:
       name: 'Name:'
       description: 'Description:'
-      cencel: 'Cencel'
+      cencel: 'Cancel'
       title: 'Create gallery'
   letters:
     new:
@@ -98,7 +98,84 @@ en:
       text: 'Text:'
       town: 'Town:'
       send: 'Send'
-      cencel: 'Cencel'
+      cencel: 'Cancel'
+    index:
+      sent: 'Sent:'
+      your_letters: 'Your letters'
+      button_read: 'Read'
+      button_delete: 'Delete'
+    show:
+      sent_letter: 'Sent'
+      letters: 'Letters'
+      phone: 'Number phone'
+      town:  'Town'
+      email: 'Email'
+      back:   'Back'
+  questions:
+    new:
+      title: 'Enter your question!'
+    form:
+      answer: 'Answer:'
+      cencel: 'Cancel'
+      ask: 'Ask'
+    index:
+      title: 'Questions'
+      delete: 'Delete'
+      ask: 'Ask'
+      responce: 'Responce'
+      add: 'Add'
+      back: ' ago'
+      warning: 'Warning!'
+      text_warning: 'Only registered users can ask me questions.'
+      create_profile: 'Create profile'
+    edit:
+      responce: 'Responce'
+      info: 'Enter your questions.'
+      answer: 'Your answer:'
+      add_answer: 'Add answer'
+      warning: 'Warning!'
+      admin: 'You are not allowed to enter the administrative area!'
+  page:
+    posts: 'Number of posts'
+    add: 'Added'
+    read: 'Read...'
+    index:
+      first: 'First'
+      last: 'Last'
+  posts:
+    new:
+      title: 'New post'
+    form:
+      name: 'Name:'
+      text: 'Text:'
+      add_post: 'Add post'
+      image: 'Image:'
+      remove_image: 'Remove image'
+    index:
+      title: 'Number of posts'
+      add: 'Added'
+      delete: 'Delete'
+      read:  'Read...'
+      first: 'First'
+      last:  'Last'
+    show:
+      like: 'Like'
+      comment: 'Leave a comment:'
+      comments: 'Namber of comment'
+  service:
+    comments:
+      back: 'ago'
+    form_comments:
+      info: 'Your comment must contain not more than 200 characters!'
+      button_comment: 'Add comment'
+    local:
+      socil: 'Social Networks'
+
+
+
+
+
+
 
 
 

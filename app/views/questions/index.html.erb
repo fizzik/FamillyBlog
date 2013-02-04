@@ -1,6 +1,6 @@
 
 
-<center><h4>Вопросы</h4></center>
+<center><h4><%= t('.title') %></h4></center>
 <hr/>
 <% @questions.each do |question| %>
     <div class="conteiner_ask">
@@ -8,12 +8,12 @@
       <div class="delete">
         <% if signed_in? %>
             <% if current_user.admin? %>
-                <p clas="muted"><%= link_to 'Удалить', question, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                <p clas="muted"><%= link_to t('.delete'), question, method: :delete, data: { confirm: 'Are you sure?' } %></p>
             <% end %>
         <% end %>
       </div>
       <div class ="time_questions">
-      <p class="muted">Add <%= time_ago_in_words(question.created_at) %> ago.</p>
+      <p class="muted"><%=  t('.add')%> <%= time_ago_in_words(question.created_at) %><%=  t('.back')%>.</p>
       </div>
 
       <dl>
@@ -21,7 +21,7 @@
         <dd><p class="muted"> <%= question.answer %>
           <% if signed_in? %>
               <% if current_user.admin? %>
-                  <%= link_to "Ответить", edit_question_path(question) %>
+                  <%= link_to t('.responce'), edit_question_path(question) %>
               <% end %>
           <% end %>
         </p></dd>
@@ -34,11 +34,11 @@
 
 <br />
 <% if signed_in? %>
-<%= link_to 'Задать вопрос', new_question_path, :class => 'btn btn-small' %>
+<%= link_to t('.ask'), new_question_path, :class => 'btn btn-small' %>
     <% else %>
     <div class="alert alert-error">
-      <h4 class="alert alert-error">Предупреждение!</h4>
-      Только зарегистрирование пользователи могут задавать мне вопросы.
-      <a class="btn btn-small" href="/signup">Cоздать профиль</a>
+      <h4 class="alert alert-error"><%=t('.warning')%></h4>
+      <%=t('.text_warning')%>
+      <a class="btn btn-small" href="/signup"><%=t('.create_profile')%></a>
     </div>
  <% end %>
