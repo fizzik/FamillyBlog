@@ -1,19 +1,22 @@
 <% if signed_in? %>
     <% if current_user.admin? %>
 <center><h4>Пользователи</h4></center>
-        <hr/>
+
        <p class="muted"> Всего пользователей: <strong><%= pluralize(@total_users, "") %></strong></p>
 <%= will_paginate %>
 <ul class="users">
-  <% @users.each do |user| %>
-
+  <% @users.desc.each do |user| %>
+      <hr/>
+      <p class="muted"> Создан: <%= time_tag(user.created_at) %></p>
       <div class="image_user_all">
 
 
           <%= link_to user.name, user %>
 
 
+
       </div>
+
       <div class="delete_user">
         <% if current_user.admin? %>
             <%= link_to "Удалить", user, :method => :delete, :confirm => "Вы уверены?",

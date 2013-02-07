@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
         format.html { redirect_to :back}
         format.js
       else
-        format.html { redirect_to :back, :notice => "Field should not be empty and max 200 symbol" }
+        format.html { redirect_to :back, :notice => "Field should not be empty min 1 and max 200 symbol" }
       end
     end
   end

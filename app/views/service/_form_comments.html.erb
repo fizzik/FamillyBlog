@@ -1,7 +1,8 @@
-<div class="info_admin_sector">
-  <p class="text-error"> ► <%= t('.info') %></p>
-</div>
+
 <% if signed_in? %>
+    <div class="info_admin_sector">
+      <p class="text-error"> ► <%= t('.info') %></p>
+    </div>
     <div class="form_comment">
     <div class="field">
     <%= form_tag controller: "comments", actions: "create", :remote => true do %>
@@ -16,7 +17,7 @@
 <% else %>
     <div class="alert alert-error">
       <h4 class="alert alert-error">Предупреждение!</h4>
-      Только зарегистрирование пользователи могут оставлять коментарии!
-      <a class="btn btn-small" href="/signup">Cоздать профиль</a>
+      Только зарегистрирование пользователи могут оставлять коментарии!<br/>
+      <%= link_to t('layouts.signin.signup'), new_user_path, :class => 'btn btn-small'%>
     </div>
 <% end %>

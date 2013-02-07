@@ -1,17 +1,20 @@
 
 <div class="gallery">
 <div class="row">
-  <center><h4>Фото альбомы</h4></center>
+  <center><h4><%= t('gallery.index.title') %></h4></center>
   <br/>
   <div class="container_photo_gallery">
   <ul class="thumbnails files">
-    <% @galleries.each do |gallery| %>
-        <li class="span2" id="gallery_<%= gallery.id %>">
+    <% @galleries.desc.each do |gallery| %>
+        <li class="span4" id="gallery_<%= gallery.id %>">
           <div class="thumbnail">
             <% if gallery.cover.blank? or !Picture.find_by_id(gallery.cover) %>
+
+                  <p class="muted"><center><%= gallery.name %></center></p>
+                  <p class="muted"><%= t('gallery.index.create') %> <%= gallery.created_at.strftime('%F, %H:%M ') %></p>
+                 <p class='muted'> <%= t('gallery.index.photo') %> <%= pluralize gallery.pictures.size, ""  %></p>
                 <a href="<%= gallery_path(:id => gallery.id) %>">
-                  <p class="muted"><%= gallery.name %></p>
-                  <img src="/assets/photogalery.jpg" alt="">
+                  <img src="/assets/photogalery.jpg">
 
                 </a>
             <% else %>

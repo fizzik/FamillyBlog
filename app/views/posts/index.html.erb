@@ -4,7 +4,8 @@
 
 <% @posts.each do |post| %>
 
-
+    <table class="table table-hover">
+      <td>
     <div class="blocke">
 
       <p class="muted"> <small><i class="icon-time"></i>  <%= t('.add') %>: <%= (post.created_at.strftime('%F, %H:%M ')) %></small> </p>
@@ -33,12 +34,12 @@
       <div class="link">
         <p><%=  link_to t('.read'), post %> </p>
       </div>
-      <hr/>
+
 
 
     </div>
-
-
+      </td>
+   </table>
 <% end %>
 <center><div class="pagination">
   <ul>
