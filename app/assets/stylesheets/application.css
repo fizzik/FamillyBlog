@@ -112,7 +112,7 @@ a:visited {
 }
 /* Navigation */
 .language{
-    margin-left: -285px;
+    margin-left: 400px;
     margin-top: -16px;
 }
 nav {
@@ -266,7 +266,7 @@ ul.users {
     margin-left: 14px;
 }
 .statistic_nav{
-    margin-left: 277px;
+    margin-left: 1px;
     margin-top: 5px;
 }
 .statistic{
@@ -444,7 +444,7 @@ margin-left: 505px;
 }
 /* Sorting button*/
 .sort{
-    margin-top: -42px;
+    margin-top: -41px;
     margin-left: 3px;
 }
 /* gallery */

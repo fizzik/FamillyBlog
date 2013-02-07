@@ -27,25 +27,25 @@ FamillyBlog::Application.routes.draw do
   resources :posts do
 
     member {post :vote}
-  end
-  end
 
-  get "page/gallery"
-  get "page/questions"
-  get "sessions/new"
-  get "page/services"
-  match '/about', :to => 'page#about'
-  match '/help', :to => 'page#help'
-  match '/admin', :to => 'admin#admin'
-  match '/services', :to => 'page#services'
+  end
 
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
+  end
+  root :to => 'page#index',  :as => 'page'
+  match '/admin', :to => 'admin#admin'
+  match '/about', :to => 'page#about'
+  match '/help', :to => 'page#help'
+  match '/services', :to => 'page#services'
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-   root :to => 'page#index',  :as => 'page'
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

@@ -1,5 +1,5 @@
 <div class="counter_posts">
-  <p class="muted">Количество записей: <%= pluralize @posts.count, "" %> </p>
+  <p class="muted"><%=t('.title')%>: <%= pluralize @posts.count, "" %> </p>
 </div>
 
 <% @posts.each do |post| %>
@@ -7,7 +7,7 @@
 
     <div class="blocke">
 
-      <p class="muted"> <small><i class="icon-time"></i>  Добавлено: <%= (post.created_at.strftime('%F, %H:%M ')) %></small> </p>
+      <p class="muted"> <small><i class="icon-time"></i>  <%= t('.add') %>: <%= (post.created_at.strftime('%F, %H:%M ')) %></small> </p>
 
       <strong><%= post.title%></strong>
 
@@ -25,13 +25,13 @@
       <div class="link_delete">
         <% if signed_in? %>
             <% if current_user.admin? %>
-                <%= link_to "Удалить", post, :method => :delete,
+                <%= link_to t('.delete'), post, :method => :delete,
                             :title => "Delete #{post.idea}" %>
             <% end %>
         <% end %>
       </div>
       <div class="link">
-        <p><%=  link_to "Читать дальше...", post %> </p>
+        <p><%=  link_to t('.read'), post %> </p>
       </div>
       <hr/>
 
@@ -42,12 +42,12 @@
 <% end %>
 <center><div class="pagination">
   <ul>
-    <li><a href="?page=1">Начало</a></li>
+    <li><a href="?page=1"><%=t('.first')%></a></li>
     <li><a href="?page=2">2</a></li>
     <li><a href="?page=3">3</a></li>
     <li><a href="?page=4">4</a></li>
     <li><a href="?page=5">5</a></li>
-    <li><a href="?page=6">Конец</a></li>
+    <li><a href="?page=6"><%=t('.last')%></a></li>
   </ul>
 </div> </center>
 

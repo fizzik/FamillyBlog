@@ -10304,4 +10304,380 @@ Need Counter Cache
   Post => [:comments]2013-02-03 19:45:04[WARN] user: vitalekspc
 localhost:3000http://localhost:3000/?locale=en
 Need Counter Cache
+  Post => [:comments]2013-02-04 14:10:30[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:10:36[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:23:12[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:44:32[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:47:25[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:51:27[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:51:54[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:54:33[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:54:35[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:54:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:54:59[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:02[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:08[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:11[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:31[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:56[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:55:59[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:57:18[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:57:38[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:57:53[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 14:58:25[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:00:29[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:01:50[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:01:53[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:01:55[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:02:22[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:02:34[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:02:53[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:03:58[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:05:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:05:32[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:08:55[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:10:12[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:10:15[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:11:51[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:11:54[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:11:56[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:22:09[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:22:26[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:22:29[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:23:38[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:26:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:27:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:27:43[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:27:54[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:28:52[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:43:14[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 15:43:54[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 15:44:00[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_98573410'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_98573410'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_99947850'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 15:45:33[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 15:46:07[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_98573410'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_98573410'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_99947850'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 15:48:28[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:48:47[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:48:51[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:24[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/about
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:27[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:37[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:41[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?page=2
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:46[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:50[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:49:58[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 15:50:06[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:15:02[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:15:43[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:15:47[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:16:26[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:16:36[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:16:57[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:17:13[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:17:24[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:17:41[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:17:53[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:02[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:12[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?class=btn+btn-small&locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:23[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:36[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:45[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:53[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:18:58[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:19:01[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:19:14[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=ru
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:20:18[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:20:25[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_98573410'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_98573410'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_99947850'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 16:20:43[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/ru/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:22:37[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:22:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:22:43[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/7
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 16:22:49[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:23:18[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:23:39[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:23:46[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:24:07[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:25:25[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?locale=en
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:25:30[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/6
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 16:25:36[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/6
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 16:25:44[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts/6
+N+1 Query detected
+  Comment => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:6:in `block in _app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/service/_comments.html.erb:1:in `_app_views_service__comments_html_erb__116624993_101401000'
+  /home/vitalekspc/Pro/FamillyBlog/app/views/posts/show.html.erb:53:in `_app_views_posts_show_html_erb__838520053_102808970'
+  /home/vitalekspc/Pro/FamillyBlog/app/controllers/posts_controller.rb:26:in `show'2013-02-04 16:26:03[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts?page=1
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:26:10[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/en/posts?page=2
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:26:14[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:26:19[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/?page=2
+Need Counter Cache
+  Post => [:comments]2013-02-04 16:26:26[WARN] user: vitalekspc
+localhost:3000http://localhost:3000/
+Need Counter Cache
   Post => [:comments]

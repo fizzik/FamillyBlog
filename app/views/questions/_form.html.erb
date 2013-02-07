@@ -7,13 +7,13 @@
     <% if signed_in? %>
         <% if current_user.admin? %>
   <div class="field">
-    <%= f.label :answer, "Oтвет:" %>
+    <%= f.label :answer, t('.answer') %>
     <%= f.text_field :answer %>
   </div>
             <% end %>
         <% end %>
-    <%= link_to 'Отмена', posts_path,  :class => 'btn btn-small' %>
-    <%= f.submit "Задать вопрос", :class => 'btn btn-small' %>
+    <%= link_to t('.cencel'), posts_path,  :class => 'btn btn-small' %>
+    <%= f.submit t('.ask'), :class => 'btn btn-small' %>
 
 
 <% end %>

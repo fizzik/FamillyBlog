@@ -1,5 +1,5 @@
 <div class="info_admin_sector">
-  <p class="text-error"> ► Ваш комментарий должен содержать не более 200 символов!</p>
+  <p class="text-error"> ► <%= t('.info') %></p>
 </div>
 <% if signed_in? %>
     <div class="form_comment">
@@ -9,7 +9,7 @@
           <%= text_area_tag :content, "", size: '100x5' %>
 
         <%= text_field_tag :post_id, @post.id, style: "display: none;" %><br/>
-        <%= submit_tag "Добавить коментарий", :class => 'btn btn-small' %>
+        <%= submit_tag t('.button_comment'), :class => 'btn btn-small' %>
     <% end %>
     </div>
     </div>

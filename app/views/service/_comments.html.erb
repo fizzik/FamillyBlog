@@ -7,7 +7,7 @@
             </div>
 
             <div class="date">
-              <p class="muted"> Created <%= time_ago_in_words(comment.created_at) %> ago.</p>
+              <p class="muted"> <%= t('page.add') %> <%= time_ago_in_words(comment.created_at) %> <%= t('.back') %></p>
             </div>
             <div class="container_delete">
               <% if signed_in? %>
@@ -20,7 +20,7 @@
 
 
           <div class="image_comment">
-            <%=link_to (image_tag comment.user.image_url.to_s, size: '50x50'), comment.user%>
+            <%=link_to (image_tag comment.user.image_url.to_s, :size => '50x50'), comment.user%>
           </div>
           <div class="content">
             <p class="text-error"><%= comment.content %></p>
