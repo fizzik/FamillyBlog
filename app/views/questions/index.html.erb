@@ -1,8 +1,11 @@
 
 
 <center><h4><%= t('.title') %></h4></center>
-<hr/>
+<br/>
+
+<p class="muted"><%= t('.counter_questions') %> <%= pluralize @questions.count, "" %></p>
 <% @questions.each do |question| %>
+    <hr/>
     <div class="conteiner_ask">
 
       <div class="delete">
@@ -27,14 +30,17 @@
         </p></dd>
 
       </dl>
-      <hr/>
+
     </div>
+    <hr/>
 <% end %>
 
 
 <br />
 <% if signed_in? %>
-<%= link_to t('.ask'), new_question_path, :class => 'btn btn-small' %>
+    <center>
+<%= link_to t('.ask'), new_question_path, :class => 'btn btn-large' %>
+    </center>
     <% else %>
     <div class="alert alert-error">
       <h4 class="alert alert-error"><%=t('.warning')%></h4>

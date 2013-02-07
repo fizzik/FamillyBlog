@@ -2,8 +2,11 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = Question.all
     @questions = Question.desc
+    @posts = Post.desc.paginate(:page => params[:page],  :per_page => 5)
+
+    @total_users = User.count
+    @total_questions = Question.count
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @questions }

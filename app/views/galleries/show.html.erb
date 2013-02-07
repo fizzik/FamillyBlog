@@ -1,14 +1,14 @@
 <div class="gallery">
 <div class="row">
-  <center><h4>Мои фото</h4></center>
+  <center><h4><%=t('gallery.show.title')%></h4></center>
 
   <input type="hidden" id="galleryID" value="<%= @gallery.id %>">
   <dl>
-    <dt><p class="text-error">Название:</p></dt>
+    <dt><p class="text-error"><%=t('gallery.show.name')%>:</p></dt>
     <dd><p class="muted"><%= @gallery.name %></p></dd>
   </dl>
   <dl>
-    <dt><p class="text-error">Описание: </p></dt>
+    <dt><p class="text-error"><%=t('gallery.show.description')%>: </p></dt>
     <dd><p class="muted"> <%= @gallery.description %></p></dd>
   </dl>
 
@@ -116,7 +116,7 @@
 
 <div class="row">
    <div class="button_gallery">
-    <%= link_to 'Назад', galleries_path, :class => 'btn btn-small'  %>
+    <%= link_to t('gallery.new.cencel'), galleries_path, :class => 'btn btn-small'  %>
     <% if signed_in? %>
         <% if current_user.admin? %>
     <%= link_to 'Редактировать', edit_gallery_path(@gallery), :class => 'btn btn-small ' %>

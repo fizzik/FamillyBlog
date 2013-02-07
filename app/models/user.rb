@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
 
   has_many :comments
   has_many :evaluations, class_name: "RSEvaluation", as: :source
-  has_one :miniadmin
+  scope :desc, order("created_at DESC")
 
 
 
@@ -43,7 +43,7 @@ class User < ActiveRecord::Base
     FileUtils.cp(large_version, current_version)
   end
 
-   NOTES_TYPES = ["Online", "Offline"]
+
   def voted_for?(post)
     evaluations.where(target_type: post.class, target_id: post.id).present?
   end

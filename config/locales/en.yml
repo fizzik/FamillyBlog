@@ -86,6 +86,10 @@ en:
       description: 'Description:'
       cencel: 'Cancel'
       title: 'Create gallery'
+    index:
+      title: 'Photo Gallery'
+      create: 'Create:'
+      photo:  'Photos:'
   letters:
     new:
        title: 'New Letter'
@@ -111,6 +115,12 @@ en:
       town:  'Town'
       email: 'Email'
       back:   'Back'
+  gallery:
+    show:
+      title: 'Photo'
+      name: 'Name'
+      description: 'Description'
+
   questions:
     new:
       title: 'Enter your question!'
@@ -128,6 +138,7 @@ en:
       warning: 'Warning!'
       text_warning: 'Only registered users can ask me questions.'
       create_profile: 'Create profile'
+      counter_questions: 'Number of questions'
     edit:
       responce: 'Responce'
       info: 'Enter your questions.'

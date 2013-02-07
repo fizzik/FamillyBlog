@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 
 
     @total_users = User.count
+    @total_posts = Post.count
   respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
