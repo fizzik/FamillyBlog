@@ -5,25 +5,11 @@ gem 'will_paginate', '3.0.3'
 gem 'carrierwave'
 gem 'kaminari'
 gem 'rmagick'
-gem 'taps'
-gem 'russian', '~> 0.6.0'
-gem 'sunspot_rails'
-gem 'sunspot_solr'
-gem 'progress_bar'
-gem "bootstrap-wysihtml5-rails", "~> 0.3.1.14"
-gem 'simple_form', '2.0.4'
-
-gem 'meta_search'
-
 gem 'mysql2'
-gem 'yaml_db'
-gem 'rails_db_dump'
 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
 
 gem 'execjs'
 
@@ -43,9 +29,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'simple_form', '2.0.4'
-gem 'client_side_validations', '3.2.1'
-gem 'client_side_validations-simple_form', '2.0.1'
 
 
 # To use ActiveModel has_secure_password
