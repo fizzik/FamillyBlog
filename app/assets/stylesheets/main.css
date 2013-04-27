@@ -1,0 +1,82 @@
+
+
+#banned{
+    width:99%;
+    background:url("bd.png")  repeat-x 0 0;
+    position:relative;
+    height: 65px;
+    margin-top: 3px;
+    margin-left: 7px;
+    border-radius: 3px;
+}
+.containers{
+    width: 99%;
+    background:url("bd2.png") repeat;
+    position:relative;
+    height: 75%;
+    margin-left: 7px;
+    margin-top: 1px;
+
+}
+#header{
+    width:99%;
+    background:url("bd.png") repeat-x 0 0;
+    height:100px;
+    margin-top: -7px;
+    margin-left: 7px;
+    border-radius: 3px;
+}
+body {
+    font-family: "Lobster" arial, serif;
+    font-size: 1.15em;
+    cursor: default;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: white;
+    margin: 0;
+}
+.super_links{
+    color: #dbdbdb;
+    font-family: "Tahoma" arial, serif;
+    font-size: 1em;
+    line-height:3em;
+    font-weight:bold;
+    text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
+    text-decoration: none;
+    margin-left: 25px;
+}
+.super_links:hover{
+    color: #979797;
+    font-family: "Tahoma" arial, serif;
+    font-size: 1em;
+    line-height:3em;
+    font-weight:bold;
+    text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
+    text-decoration: none;
+
+}
+#user_link{
+    float: right;
+    margin-right: 40px;
+}
+
+a{
+    color: #dbdbdb;
+    font-family: "Tahoma" arial, serif;
+    font-size: 1em;
+    line-height:3em;
+    font-weight:bold;
+    text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
+    text-decoration: none;
+    margin-left: 25px;
+}
+a:hover{
+    color: #979797;
+    font-family: "Tahoma" arial, serif;
+    font-size: 1em;
+    line-height:3em;
+    font-weight:bold;
+    text-shadow:#fff 0px 1px 0, #000 0 -1px 0;
+    text-decoration: none;
+}

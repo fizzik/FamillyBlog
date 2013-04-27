@@ -1,21 +1,4 @@
-<li>
-  <a href="/"><%= t('.home') %></a> <span class="divider">/</span>
-</li>
-<li>
-  <%= link_to t('.gallery'), galleries_path %> <span class="divider">/</span>
-</li>
-<li>
-  <%= link_to t('.questions'), questions_path %><span class="divider">/</span>
-</li>
-<li>
-  <a href="/about"><%= t('.about') %></a> <span class="divider">/</span>
-</li>
-<li>
-  <a data-toggle="modal" href="/help"><%= t('.help') %></a> <span class="divider">/</span>
-</li>
-<li>
-  <a href="/services"><%= t('.services') %></a><span class="divider">/</span>
-</li>
+
 <% if signed_in? %>
     <% if current_user.admin? %>
 
@@ -25,16 +8,12 @@
 <% end %>
     <% end %>
 <li>
-  <div class="search">
+
     <%= form_tag posts_path, :method => 'get' do %>
-        <p>
           <%= text_field_tag :search, params[:search], :placeholder=>t('.placeholder_search')  %>
-        <div class="button">
           <%= submit_tag t('.search'), :name => nil, :class=> 'btn btn-small' %>
-        </div>
-        </p>
     <% end %>
-  </div>
+
 
   <div class ="sort">
    <%= t('.sort')%>
