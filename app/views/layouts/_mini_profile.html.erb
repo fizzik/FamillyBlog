@@ -2,27 +2,12 @@
 <% if signed_in? %>
 
     <div class="heid_mini_prof">
-      <div class="date_mini_prof">
-        <p class="muted"> ► <%= t('.site') %> <%= time_tag(@user.created_at) %> </p>
-      </div>
+
     </div>
     <div class="mini_profile">
       <p class="muted"><%= t('.hello') %>,</p>
       <div class="name_mini_profile">
         <p class="text-error"><%=@user.name %></p>
-      </div>
-
-
-      <div class="navigate_mini_prof">
-        <ul class="nav nav-pills">
-          <li><%= link_to t('.my_profile'), current_user, :rel=>"tooltip", :title=>"Ваш профиль" %></li>
-          <li> <%= link_to t('.settings'), edit_user_path(current_user), :rel=>"tooltip", :title=>"Настройки профиля" %></li>
-          <li><%= link_to t('.logout'), signout_path, :rel=>"tooltip", :title=>"Покинуть сайт", :method => :delete %></li>
-        </ul>
-      </div>
-
-      <div class="image_mini_profile">
-        <%= image_tag @user.image_url.to_s, :size => '70x70'%>
       </div>
       <div class="statistic">
         <p class="muted"><i class="icon-time"></i><%= Time.now.strftime('%H:%M') %><br/>
