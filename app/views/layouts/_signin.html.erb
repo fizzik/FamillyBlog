@@ -1,5 +1,19 @@
 
+<%= link_to 'Sign up', signup_path, :class=>"super_links", :id => "user_link" %>
+<a href="#signin" name="modal" id="user_link" class="super_links">Sign in</a>
+<div id="boxes">
+  <div id="signin" class="window">
+    <div class="float_right"><a href="#"class="close" class="super_links"/>X</a>
+    </div>
+    <%= form_for(:session, :url => sessions_path) do |f| %>
+        <%= f.label :email %>
+        <%= f.text_field :email %> <br/>
+        <%= f.label :password %>
+        <%= f.password_field :password %> <br/>
+        Remember me: <%= f.check_box :remember_me %> <br/>
 
+        <%= f.submit  "Sign in" %>
 
-
-
+    <% end %>
+  </div>
+</div>
