@@ -24,13 +24,9 @@
     height:203px;
     padding:10px;
     border-radius: 5px;
-    background:url("bd.png") repeat;
-    /* BOX SHADOW */
-    /* webkit */
+    background:url("bd2.png") repeat;
     -webkit-box-shadow:  0px 0px 15px 1px rgb(0,0,0);
-    /* Mozilla */
     -moz-box-shadow:  0px 0px 15px 1px rgb(0,0,0);
     box-shadow:  0px 0px 15px 1px rgb(0,0,0);
-    /* IE <9.0 HACK (SUPPORTS ONLY ONE SHADOW) */
     filter: progid:DXImageTransform.Microsoft.dropshadow(offX=0, offY=0, color=#000000);
 }
